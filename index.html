@@ -43,9 +43,10 @@
                         <div class="glass-card info-card">
                             <h3>🎓 基本情况</h3>
                             <ul>
-                                <li><strong>学历背景：</strong> 华南农业大学 - 电子科学与技术 (2023 级)</li>
+                                <li><strong>学历背景：</strong> 华南农业大学 - 人工智能学院</li>
+                                <li><strong>所在专业：</strong> 电子科学与技术</li>
                                 <li><strong>专业成绩：</strong> 专业排名 6/100 | 多次获校一等奖学金</li>
-                                <li><strong>专业技能：</strong> C, Verilog, Python, Vivado, Keil, Altium Designer, FPGA, STM32</li>
+                                <li><strong>专业技能：</strong> 精通 C/C++ 与 Verilog，具备扎实的电路设计基础，熟练验证 FPGA 原型系统并掌握硬核嵌入式架构开发</li>
                                 <li><strong>英语水平：</strong> CET-4 (529), CET-6 (487)</li>
                             </ul>
                         </div>
@@ -77,8 +78,10 @@
 
         <!-- 作品页 -->
         <section id="portfolio" class="page-section">
-            <h2 class="section-title gradient-text">项目作品集</h2>
-            <div class="portfolio-grid">
+            <h2 class="section-title gradient-text">作品与荣誉库</h2>
+            
+            <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">💻 硬核实战作品</h3>
+            <div class="portfolio-grid" style="margin-bottom: 4rem;">
                 <!-- 嵌赛小车车 -->
                 <div class="glass-card project-card">
                     <div class="project-icon">🤖</div>
@@ -147,10 +150,36 @@
                     </div>
                 </div>
             </div>
+
+            <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">🏆 经典荣誉与奖项</h3>
+            <div class="glass-card" style="margin-bottom: 2rem; padding: 2.5rem;">
+                <ul class="experience-details" style="margin-top: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; list-style: none; padding-left: 0;">
+                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🏆 国家级一等奖</span>
+                        <strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><span style="color: var(--text-secondary);">(FPGA创新设计赛道)</span>
+                    </li>
+                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥈 国家级二等奖</span>
+                        <strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><span style="color: var(--text-secondary);">(芯片设计赛道)</span>
+                    </li>
+                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥉 国家级三等奖</span>
+                        <strong>2025年中国大学生机械工程创新创意大赛</strong>
+                    </li>
+                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥉 国家级三等奖</span>
+                        <strong>第十八届全国大学生节能减排社会实践与科技竞赛</strong>
+                    </li>
+                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥈 赛区二等奖</span>
+                        <strong>第九届全国大学生集成电路创新创业大赛</strong><br><span style="color: var(--text-secondary);">(华南赛区)</span>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section id="experience" class="page-section">
-            <h2 class="section-title gradient-text">实习、荣誉与经历</h2>
+            <h2 class="section-title gradient-text">实习经历</h2>
             <div class="timeline">
                 <!-- 实习 1 -->
                 <div class="timeline-item">
@@ -164,23 +193,6 @@
                         <ul class="experience-details">
                             <li><strong>火箭点火器控制系统：</strong> 独立负责全流程研发，完成点火系统的时序逻辑与控制程序开发，精准定义触发、监测与应急中断节点。</li>
                             <li><strong>上位机与算法设计：</strong> 独立开发 Python 上位机软件（已获软著），实现参数配置及实时监控；设计基于九轴传感器与舵机的火箭姿态控制算法。</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 奖项 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot" style="border-color: #f59e0b; box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);"></div>
-                    <div class="glass-card experience-card">
-                        <div class="experience-header">
-                            <h3>🚀 重点竞赛与荣誉奖项</h3>
-                        </div>
-                        <ul class="experience-details" style="margin-top: 1rem;">
-                            <li>🏆 <strong>国家级一等奖</strong> - 第八届全国大学生嵌入式芯片与系统设计大赛 (FPGA创新设计赛道)</li>
-                            <li>🥈 <strong>国家级二等奖</strong> - 第八届全国大学生嵌入式芯片与系统设计大赛 (芯片设计赛道)</li>
-                            <li>🥉 <strong>国家级三等奖</strong> - 2025年中国大学生机械工程创新创意大赛</li>
-                            <li>🥉 <strong>国家级三等奖</strong> - 第十八届全国大学生节能减排社会实践与科技竞赛</li>
-                            <li>🥈 <strong>赛区二等奖</strong> - 第九届全国大学生集成电路创新创业大赛 (华南赛区)</li>
                         </ul>
                     </div>
                 </div>

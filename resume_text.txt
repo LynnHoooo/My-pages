@@ -1,0 +1,126 @@
+华南农业大学 （双一流） 电子科学与技术 2023.9 – 至今
+专业成绩： 4.42/5 （ 6/100）
+英语水平 ：CET -4（529）、 CET -6（487）
+主修课程 ：高等数学（ 99）、大学物理（ 98）、模拟电子技术（ 94.2）、 C语言程序设计（ 94.5）、电路（ 93）
+专业技能： 熟练掌握 C、Verilog、Python等语言，精通 Keil、Vivado、ModelSim 、Altium Designer 、VScode、MATLAB 等软件
+校园经历：校一等奖学金（ 2/514）、校优秀共青团员 、创芯实验室（ ICIL）副会长、无人机协会干事教育背景
+项目经历胡琳
+手机号码： 14706824492 邮箱： 1436254290@163.com MBTI: ISFP ｜ ｜ ｜政治面貌： 预备党员
+基于 YOLOv8 的智能柚园巡 检机器人 2024.5 -2025.5
+作为团队负责人 ，我统筹项目推进与团队管理 。技术层面 ，我深度参与机械结构的设计 ，通过调研与仿真 ，提升设备对果园任务的适
+配性；另一方面 ，开发基于 stm32的小车控制系统 ，完成基础运动控制算法编写并实现精准喷药功能的逻辑闭环 。同时，我独立负责 LoRa  
+无线通信模块的集成与调试 ，解决了远距离数据传输中的信号干扰问题 ，实现小车作业数据与上位机的稳定交互 。此外，为进一步提升项
+目智能化水平 ，我与成员在项目后期引入了 YOLOv 8 病虫害识别模型 ，完成模型训练与轻量化部署 ，实现对柚子树苗生长状态的识别 ，
+同时还参与了交互式网页的设计 。
+项目最终成功获批 大学生创新训练项目立项 并以“优秀”等级提前结项；核心技术成果获 “柚园生长数据采集与分析平台 ”、“柚
+园水肥一体化智能灌溉系统 ”两项软件著作权登记 ，机械结构设计获 “一种智慧农业用柚子树苗灌溉装置 ”实用新型专利授权 。
+基于 FPGA的多传感器融合天气图像处理系统 2025.5 -2025.9
+作为图像处理算法 负责人，我设计并在 Zynq  Artix -7 上完成了 端到端的高性能图像信号处理 （ISP）方案落地——  从OV5640  图像传
+感器的数据采集 ，到最终 HDMI  显示输出的全链路流程中 ，开发并实现了噪声抑制 、坏点校正 、自动白平衡等 22 种图像处理增强算法 ，
+通过硬件层面的优化适配 ，显著提升了输出图像的清晰度 、色彩还原度与整体视觉质量 。在数据处理方面 ，我负责多源环境传感器数据处
+理，通过编写多字节收发串口程序 ，为系统搭建数据获取通道 。独立完成基于 PyQt 6 的交互式上位机界面开发 ，不仅支持对 FPGA  端图像
+算法的灵活切换 ，还实现了传感器数据可视展示 。同时，与队友合作 ，在Zynq  7020上部署基于 MobileNet 的天气图像识别模型 。
+项目最终成功获全国大学⽣集成电路创新创业大赛二等奖 ，目前在投 《集成电路与嵌入式系统 》。
+面向荔枝病虫害 诊断与防治的多智能体协同系统 2025.5 -至今
+针对荔枝病虫害防治的自动化与智能化需求 ，我参与构建了面向荔枝病⾍害诊断与防治的多智能体协同系统 。算法优化方面 ，以CLIP  
+预训练模型 为基础实现高精度病虫害识别 ，同时创新性引入 Faster  R-CNN  网络，有效解决了病虫害定位精度不足的关键问题；架构设计
+层面，独创性地以 DeepSeek  大模型为基座 ，设计多模态模块化定制框架 ，通过自研任务复杂度分类器 ，显著提升大模型在病虫害诊断与
+预防系统中的检索效率；整体方案为荔枝病虫害精准防治提供了核心技术支撑 ，直接推动果园管理效率提升与成本优化 。
+项目最终成功获 国家级大学生创新训练项目立项 ，发表论文 《基于 YOLOv 11n-ACE的轻量化荔枝 FPN改进病虫害检测方法 》，目前已
+被农业机械学报录用 。
+100%可复用火箭点火器 2025.4 -2025.9
+在北京冕巢航天科技有限公司实习五个月 ，作为嵌入式实习生 ，深度参与 火箭点火器控制系统的全流程研发 ，独立负责 点火系统的时
+序逻辑设计与控制程序开发 ，精准定义点火触发 、状态监测 、应急中断等关键时序节点 ，为系统稳定运行奠定基础 。全程参与多轮点火试
+验，助力团队成功完成点火器产品研发 。独立开发点火控制系统上位机软件 ，实现点火参数配置 、实时状态监控 、历史数据回溯等功能 ，
+该软件已成功获取计算机软件著作权； 同时设计基于 九轴传感器与舵机的火箭姿态控制算法 ，为火箭姿态稳定控制提供了技术参考 。
+荣誉奖项
+第八届全国大学生嵌入式芯片与系统设计大赛 FPGA创新设计赛道
+第八届全国大学生嵌入式芯片与系统设计大赛芯片设计赛道
+2025年中国大学生机械工程创新创意大赛
+第十八届全国大学生节能减排社会实践与科技竞赛
+第九届全国大学生集成电路创新创业大赛
+…其他省部级奖项 4项国家级一等奖
+国家级二等奖
+国家级三等奖
+国家级三等奖
+华南赛区⼆等奖
+
+Guangzhou, China
+South China Agricultural  University  (SCAU)  
+Bachelor of Engineering in Electronic Science and Technology2023.9 – Present EDUCATION
+TECHNICAL SKILLSLynn Hoo
+Phone number ：
+14706824492E-mail：
+1436254290@163.comMBTI:
+ISFP
+➢Academic Performance: GPA: 4.42/5.0 (Rank: 6/100 )
+➢Core Courses: Advanced Mathematics (99), University Physics (98), Analog Electronics 
+(94.2), C Programming (94.5), Electric Circuits (93).
+➢English Proficiency: CET-4 (529), CET -6 (487).
+➢Honors & Awards: University First -Class Scholarship (Twice, Rank: 2/514).Vice 
+President of Integrated Circuit Innovation Lab (ICIL).Member of UAV Association
+➢Programming: C, Verilog, Python.
+➢Tools: Vivado, ModelSim, Keil, Altium Designer, MATLAB, VS Code.
+➢Hardware: FPGA , STM32, RISC -V, Sensors & Actuators .
+PROJECT EXPERIENCE
+Lightweight Pest Detection Method for Lychee Orchards based on YOLOv11n -ACE 
+ 2025.04 – 2025.09
+➢Core Researcher:  Developed an optimized pest detection model to improve precision in 
+complex orchard environments.
+➢Innovation:  Proposed the YOLOv11n -ACE architecture, incorporating lightweight FPN 
+(Feature Pyramid Network) improvements to balance detection accuracy and computational 
+efficiency for edge devices.
+➢Outcome:  Published as the first author in the Journal of Agricultural Machinery  
+(Accepted); Project officially funded as a National Undergraduate Innovation and 
+Entrepreneurship Training Program .
+Multi-Sensor Fusion Weather Image Processing System based on FPGA
+2025.05 –2025.09
+•Algorithm Lead: Designed and implemented an end -to-end high -performance Image Signal 
+Processing (ISP) solution on Xilinx Zynq Artix -7.
+•Hardware Optimization: Developed 22 image enhancement algorithms including noise 
+suppression, bad pixel correction, and automatic white balance to improve visual quality from 
+OV5640 sensors to HDMI output.
+•System Integration: Deployed a MobileNet weather recognition model on Zynq 7020 and 
+developed an interactive host computer interface using PyQt6 for real -time algorithm 
+switching and data visualization.
+•Awards: Won the National Second Prize in the National University Integrated Circuit 
+Innovation and Entrepreneurship Competition; Paper currently under review at Integrated 
+Circuits and Embedded Systems .Guangzhou 
+China
+HONORS & RESEARCH AWARDS
+National Level 
+➢1st Prize:  8th National University Embedded Chip and System Design Competition - 
+FPGA Innovation Track.
+➢2nd Prize:  8th National University Embedded Chip and System Design Competition - 
+Chip Design Track.
+➢3rd Prize:  2025 China University Mechanical Engineering Innovation and Creativity 
+Competition.
+➢3rd Prize:  18th National University Student Social Practice and Science & Technology 
+Contest on Energy Saving and Emission Reduction.
+Provincial & Regional Level 
+➢2nd Prize:  9th National University Integrated Circuit (IC) Innovation and 
+Entrepreneurship Competition - South China Region (also known as the " Huanxin  Cup").
+➢2nd Prize:  11th "Datang Cup" National University Mobile Communication Technology and 
+5G Application Innovation Competition - Guangdong Province.
+➢2nd Prize:  2025 Guangdong Graduate Academic Forum - "Automobile and Electronic 
+Environmental Protection" Innovation Competition.
+➢3rd Prize:  17th "China Hardware Cup" (AIC) National University Computer Promotion 
+and Application Selection Contest - Guangdong Province.
+➢3rd Prize:  10th "Challenge Cup" Guangdong University Student Science and Technology 
+Academic Works Competition.100% Reusable Rocket Igniter Control System
+2024.12 – 2025.05
+➢Embedded Systems Intern  at Beijing Mianchao  Aerospace Technology Co., Ltd.
+➢Design & Development:  Independently designed the timing logic and control programs 
+for the ignition system, covering ignition triggering, status monitoring, and emergency 
+interruption.
+➢Software Development:  Developed the PC -side control software (Python -based) for 
+parameter configuration and real -time monitoring; obtained a Computer Software 
+Copyright .
+➢Navigation & Control:  Designed a rocket attitude control algorithm utilizing 9 -axis 
+IMU sensors and servos.
+Intelligent Pomelo Orchard Inspection Robot based on YOLOv8  
+2024.05 – 2025.05
+➢Team Leader:  Managed overall project progress and interdisciplinary coordination.
+➢Hardware & Control:  Designed the STM32 -based motion control system and 
+integrated LoRa wireless modules for long -distance, anti -interference data 
+transmission between the robot and the host station.
