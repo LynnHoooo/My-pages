@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人主页 - 电子工程与芯片设计">
+    <title>我的个人主页 | 简历与作品集</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animations">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="nav-brand">Profile.</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active" data-target="home">个人简历</a></li>
+            <li><a href="#portfolio" class="nav-item" data-target="portfolio">作品页</a></li>
+            <li><a href="#experience" class="nav-item" data-target="experience">经历页面</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- 个人简历 / 主页 -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="gradient-text">你好，这里是<span class="highlight">「你的名字」</span></h1>
+                    <p class="subtitle">热爱电子工程与体系架构设计的探索者</p>
+                    
+                    <div class="about-grid">
+                        <div class="glass-card info-card">
+                            <h3>🎓 基本情况</h3>
+                            <ul>
+                                <li><strong>学历背景：</strong> [你的大学] - [你的学历]</li>
+                                <li><strong>所在专业：</strong> [微电子科学与工程 / 集成电路设计等]</li>
+                                <li><strong>专业技能：</strong> Verilog, C/C++, 嵌入式开发, 电路设计, FPGA验证</li>
+                                <li><strong>求职意向：</strong> 芯片设计工程师 / 嵌入式软硬件工程师</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card info-card">
+                            <h3>⭐ 个人性格特征</h3>
+                            <div class="trait-item">
+                                <h4>💡 持续热爱与好奇心</h4>
+                                <p>对硬件底层逻辑和新技术充满热情，喜欢从0到1搭建系统，乐于深究“为什么”。</p>
+                            </div>
+                            <div class="trait-item">
+                                <h4>🤝 团队精神与责任感</h4>
+                                <p>多次在团队竞赛中担任核心研发力量，能够进行良好的沟通协作并稳步推进项目进度。</p>
+                            </div>
+                            <div class="trait-item">
+                                <h4>🔧 极客精神与抗压力</h4>
+                                <p>在硬件调试及Bug排查的高压环境下，能保持冷静与耐心，具备较强的问题定位和解决能力。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-container">
+                        <button class="primary-btn glow-effect" id="goToPortfolio">
+                            查看我的作品 <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品页 -->
+        <section id="portfolio" class="page-section">
+            <h2 class="section-title gradient-text">项目作品集</h2>
+            <div class="portfolio-grid">
+                <!-- 嵌赛小车车 -->
+                <div class="glass-card project-card">
+                    <div class="project-icon">🏎️</div>
+                    <div class="project-content">
+                        <h3>嵌赛小车车研发</h3>
+                        <p>基于嵌入式微控制器设计开发的智能循迹与避障小车。负责底层驱动编写、传感器数据融合算法以及电机的PID闭环控制，实现了复杂赛道下的稳定高速行驶。</p>
+                        <div class="tags">
+                            <span class="tag">嵌入式C语言</span>
+                            <span class="tag">电机控制</span>
+                            <span class="tag">PID算法</span>
+                            <span class="tag">PCB打板</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 集创赛 -->
+                <div class="glass-card project-card">
+                    <div class="project-icon">🏆</div>
+                    <div class="project-content">
+                        <h3>全国大学生集成电路创新创业大赛 (集创赛)</h3>
+                        <p>参与杯赛项目，基于FPGA平台完成了[具体方向，例如：AI加速器/通信基带]的设计。负责架构设计、RTL代码编写及时序收敛，最终通过软硬协同实现了系统功能并获奖。</p>
+                        <div class="tags">
+                            <span class="tag">Verilog</span>
+                            <span class="tag">FPGA原型验证</span>
+                            <span class="tag">软硬件协同</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 芯片设计 -->
+                <div class="glass-card project-card">
+                    <div class="project-icon">🖥️</div>
+                    <div class="project-content">
+                        <h3>特定域架构(DSA)芯片核心模块设计</h3>
+                        <p>完成了一款具有独立指令集的芯片前端设计。独立完成了微架构设计、状态机开发，并使用SystemVerilog搭建了基础Testbench，进行了充分的仿真验证覆盖。</p>
+                        <div class="tags">
+                            <span class="tag">数字IC前端</span>
+                            <span class="tag">计算机体系结构</span>
+                            <span class="tag">Modelsim/VCS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 大创 -->
+                <div class="glass-card project-card">
+                    <div class="project-icon">💡</div>
+                    <div class="project-content">
+                        <h3>大学生创新创业训练计划 (大创项目)</h3>
+                        <p>作为项目核心成员，研究[大创主题]课题。从文献调研开始，主导搭建了实验平台，收集并分析了大量测试数据，项目顺利结题并整理学术论文/申请国家发明专利。</p>
+                        <div class="tags">
+                            <span class="tag">科研探索</span>
+                            <span class="tag">数据分析</span>
+                            <span class="tag">系统集成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 经历页面 -->
+        <section id="experience" class="page-section">
+            <h2 class="section-title gradient-text">实习与经历</h2>
+            <div class="timeline">
+                <!-- 实习 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card experience-card">
+                        <div class="experience-header">
+                            <h3>数字IC设计/验证实习生</h3>
+                            <span class="date">202X年X月 - 202X年X月</span>
+                        </div>
+                        <h4 class="company">某知名半导体科技公司</h4>
+                        <ul class="experience-details">
+                            <li>深入参与了某SoC芯片下一代产品的研发，负责其中[某功能模块]的RTL代码设计与迭代优化。</li>
+                            <li>协助验证工程师基于UVM方法学搭建自动化签核环境，编写测试用例，使模块验证覆盖率达到99%。</li>
+                            <li>优化了模块内部数据通路结构，降低了面积开销，并通过工具进行了功耗评估。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 实习 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-card experience-card">
+                        <div class="experience-header">
+                            <h3>硬件/嵌入式系统研发实习生</h3>
+                            <span class="date">202X年X月 - 202X年X月</span>
+                        </div>
+                        <h4 class="company">某智能物联网设备制造企业</h4>
+                        <ul class="experience-details">
+                            <li>使用硬件设计软件参与了多层高速PCB板的原理图设计与Layout布线，协助解决了数模混合信号的干扰问题。</li>
+                            <li>基于RTOS操作系统开发了设备端的核心业务逻辑代码，优化了传感器数据采集频率与蓝牙通信的稳定性。</li>
+                            <li>独立完成了新版本样机的软硬件联调测试，整理了详细的问题排查记录及测试报告。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
