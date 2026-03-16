@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="background-animations">
         <div class="glow-orb orb-1"></div>
@@ -29,16 +31,18 @@
         <section id="home" class="page-section active">
             <div class="hero">
                 <div class="hero-content">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap-reverse; gap: 2rem;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap-reverse; gap: 2rem;">
                         <div class="hero-text">
-                            <h1 class="gradient-text" style="font-size: 3.5rem; margin-top: 0;">你好，我是<span class="highlight">胡琳 (Lynn)</span></h1>
+                            <h1 class="gradient-text" style="font-size: 3.5rem; margin-top: 0;">你好，我是<span
+                                    class="highlight">胡琳 (Lynn)</span></h1>
                             <p class="subtitle">华南农业大学 · 电子科学与技术 (GPA: 4.42/5.0)</p>
                         </div>
                         <div class="profile-container" style="flex-shrink: 0;">
                             <img src="my_photo.jpg" alt="个人照片" class="profile-photo">
                         </div>
                     </div>
-                    
+
                     <div class="about-grid">
                         <div class="glass-card info-card">
                             <h3>🎓 基本情况</h3>
@@ -46,7 +50,8 @@
                                 <li><strong>学历背景：</strong> 华南农业大学 - 人工智能学院</li>
                                 <li><strong>所在专业：</strong> 电子科学与技术</li>
                                 <li><strong>专业成绩：</strong> 专业排名 6/100 | 多次获校一等奖学金</li>
-                                <li><strong>专业技能：</strong> 精通 C/C++ 与 Verilog，具备扎实的电路设计基础，熟练验证 FPGA 原型系统并掌握硬核嵌入式架构开发</li>
+                                <li><strong>专业技能：</strong> 精通 C/C++ 与 Verilog，具备扎实的电路设计基础，熟练验证 FPGA 原型系统并掌握硬核嵌入式架构开发
+                                </li>
                                 <li><strong>英语水平：</strong> CET-4 (529), CET-6 (487)</li>
                             </ul>
                         </div>
@@ -79,19 +84,24 @@
         <!-- 作品页 -->
         <section id="portfolio" class="page-section">
             <h2 class="section-title gradient-text">作品与荣誉库</h2>
-            
-            <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">💻 硬核实战作品</h3>
+
+            <h3
+                style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">
+                💻 作品简介</h3>
             <div class="portfolio-grid" style="margin-bottom: 4rem;">
                 <!-- 嵌赛小车车 -->
                 <div class="glass-card project-card">
                     <div class="project-icon">🤖</div>
                     <div class="project-content">
-                        <h3>智能柚园巡检机器人 (嵌赛·小车)</h3>
+                        <h3>基于 YOLOv8 的智能柚园巡检机器人</h3>
                         <p><strong>第八届全国大学生嵌入式芯片与系统设计大赛 - 国家级一等奖</strong><br><br>
-                        作为团队负责人，统筹项目并设计机械结构。开发基于STM32的小车控制系统，实现精准喷药与基础运动闭环。集成LoRa无线通信解决信号干扰，并引入YOLOv8实现柚子树苗病虫害识别，开发交互网页。获大创“优秀”提前结项及2项软著1项专利。</p>
+                            作为团队负责人，统筹项目并设计机械结构。开发基于STM32的小车控制系统，实现精准喷药与基础运动闭环。集成LoRa无线通信解决信号干扰，并引入YOLOv8实现柚子树苗病虫害识别，开发交互网页。获大创“优秀”提前结项及2项软著1项专利。
+                        </p>
                         <div class="project-images" style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
-                            <img src="qiansai1 (1).jpg" alt="嵌赛国一作品图1" style="width: 48%; border-radius: 12px; object-fit: cover;">
-                            <img src="qiansai1 (2).jpg" alt="嵌赛国一作品图2" style="width: 48%; border-radius: 12px; object-fit: cover;">
+                            <img src="qiansai1 (1).jpg" alt="嵌赛国一作品图1"
+                                style="width: 48%; border-radius: 12px; object-fit: cover;">
+                            <img src="qiansai1 (2).jpg" alt="嵌赛国一作品图2"
+                                style="width: 48%; border-radius: 12px; object-fit: cover;">
                         </div>
                         <div class="tags">
                             <span class="tag">STM32控制</span>
@@ -108,9 +118,12 @@
                     <div class="project-content">
                         <h3>多传感器融合天气图像处理系统 (集创赛)</h3>
                         <p><strong>第九届全国大学生集成电路创新创业大赛 - 华南赛区二等奖</strong><br><br>
-                        在Zynq Artix-7上落地端到端高性能ISP方案，开发22种图像处理增强算法。通过多字节收发串口程序融合多源环境传感器数据。使用PyQt6开发交互上位机，并在Zynq 7020上部署基于MobileNet的天气识别模型。相关论文目前在投《集成电路与嵌入式系统》。</p>
-                        <div class="project-images" style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
-                            <img src="海报.jpg" alt="集创赛天气图像处理系统海报" style="width: 100%; border-radius: 12px; object-fit: cover;">
+                            在Zynq Artix-7上落地端到端高性能ISP方案，开发22种图像处理增强算法。通过多字节收发串口程序融合多源环境传感器数据。使用PyQt6开发交互上位机，并在Zynq
+                            7020上部署基于MobileNet的天气识别模型。相关论文目前在投《集成电路与嵌入式系统》。</p>
+                        <div class="project-images"
+                            style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
+                            <img src="海报.jpg" alt="集创赛天气图像处理系统海报"
+                                style="width: 100%; border-radius: 12px; object-fit: cover;">
                         </div>
                         <div class="tags">
                             <span class="tag">Verilog/FPGA</span>
@@ -126,10 +139,14 @@
                     <div class="project-content">
                         <h3>基于LoRa通信的智能柚园监控系统</h3>
                         <p><strong>结合物联网与低功耗广域网的智慧农业实践</strong><br><br>
-                        通过搭载LoRa通信模块搭建果园低功耗无线传感网络，有效解决果园远距离传输的信号干扰问题。构建上位机可视化监控平台，实现果园生态环境指标的实时采集与控制交互，赋能乡村农业智能化转型。</p>
-                        <div class="project-images" style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
-                            <img src="lora1.png" alt="LoRa通信系统框架图" style="width: 48%; border-radius: 12px; object-fit: cover;">
-                            <img src="lora2.png" alt="果园可视化监控平台" style="width: 48%; border-radius: 12px; object-fit: cover;">
+                            通过搭载LoRa通信模块搭建果园低功耗无线传感网络，有效解决果园远距离传输的信号干扰问题。构建上位机可视化监控平台，实现果园生态环境指标的实时采集与控制交互，赋能乡村农业智能化转型。
+                        </p>
+                        <div class="project-images"
+                            style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
+                            <img src="lora1.png" alt="LoRa通信系统框架图"
+                                style="width: 48%; border-radius: 12px; object-fit: cover;">
+                            <img src="lora2.png" alt="果园可视化监控平台"
+                                style="width: 48%; border-radius: 12px; object-fit: cover;">
                         </div>
                         <div class="tags">
                             <span class="tag">LoRa低功耗通信</span>
@@ -145,9 +162,11 @@
                     <div class="project-content">
                         <h3>数字芯片与系统设计 (芯赛)</h3>
                         <p><strong>第八届全国大学生嵌入式芯片与系统设计大赛 - 芯片设计赛道 国家级二等奖</strong><br><br>
-                        完成数字芯片相关创新设计，涉及RTL代码编写与系统开发验证，最终荣获全国芯片设计赛道国二奖项。并在其中承担了核心开发与验证任务。</p>
-                        <div class="project-images" style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
-                            <img src="芯片设计.png" alt="国二芯片设计海报" style="width: 100%; border-radius: 12px; object-fit: cover;">
+                            完成数字芯片相关创新设计，涉及RTL代码编写与系统开发验证，最终荣获全国芯片设计赛道国二奖项。并在其中承担了核心开发与验证任务。</p>
+                        <div class="project-images"
+                            style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
+                            <img src="芯片设计.png" alt="国二芯片设计海报"
+                                style="width: 100%; border-radius: 12px; object-fit: cover;">
                         </div>
                         <div class="tags">
                             <span class="tag">芯片设计</span>
@@ -157,13 +176,14 @@
                     </div>
                 </div>
 
-                <!-- 大创 -->
-                <div class="glass-card project-card">
+                <!-- 面向荔枝病虫害的多智能体协同系统  -->
+                <div class="glass-card project-card" style="grid-column: 1 / -1;">
                     <div class="project-icon"> 🔬 </div>
                     <div class="project-content">
                         <h3>面向荔枝病虫害的多智能体协同系统 (大创)</h3>
                         <p><strong>国家级大学生创新训练项目</strong><br><br>
-                        使用预训练CLIP模型和Faster R-CNN网络实现高精度病虫害识别与定位。独创性以DeepSeek大模型为基座设计多模态定制框架。论文《基于 YOLOv11n-ACE的轻量化荔枝FPN改进病虫害检测方法》以第一作者身份被《农业机械学报》录用。</p>
+                            使用预训练CLIP模型和Faster R-CNN网络实现高精度病虫害识别与定位。独创性以DeepSeek大模型为基座设计多模态定制框架。论文《基于
+                            YOLOv11n-ACE的轻量化荔枝FPN改进病虫害检测方法》以第一作者身份被《农业机械学报》录用。</p>
                         <div class="tags">
                             <span class="tag">国家级大创</span>
                             <span class="tag">深度学习视觉</span>
@@ -173,28 +193,58 @@
                 </div>
             </div>
 
-            <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">🏆 经典荣誉与奖项</h3>
+            <h3
+                style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">
+                🏆 经典荣誉与奖项</h3>
             <div class="glass-card" style="margin-bottom: 2rem; padding: 2.5rem;">
-                <ul class="experience-details" style="margin-top: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; list-style: none; padding-left: 0;">
-                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                <ul class="experience-details"
+                    style="margin-top: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; list-style: none; padding-left: 0;">
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
                         <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🏆 国家级一等奖</span>
-                        <strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><span style="color: var(--text-secondary);">(FPGA创新设计赛道)</span>
+                        <strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><span
+                            style="color: var(--text-secondary);">(FPGA创新设计赛道)</span>
                     </li>
-                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
                         <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥈 国家级二等奖</span>
-                        <strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><span style="color: var(--text-secondary);">(芯片设计赛道)</span>
+                        <strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><span
+                            style="color: var(--text-secondary);">(芯片设计赛道)</span>
                     </li>
-                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
                         <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥉 国家级三等奖</span>
                         <strong>2025年中国大学生机械工程创新创意大赛</strong>
                     </li>
-                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
                         <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥉 国家级三等奖</span>
                         <strong>第十八届全国大学生节能减排社会实践与科技竞赛</strong>
                     </li>
-                    <li style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
                         <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥈 赛区二等奖</span>
                         <strong>第九届全国大学生集成电路创新创业大赛</strong><br><span style="color: var(--text-secondary);">(华南赛区)</span>
+                    </li>
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥈 省级二等奖</span>
+                        <strong>第十一届“大唐杯”全国大学生新一代信息通信技术大赛</strong><br><span style="color: var(--text-secondary);">(广东省赛区)</span>
+                    </li>
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥈 创新竞赛二等奖</span>
+                        <strong>2025年广东研究生学术论坛“汽车与电子环保”创新竞赛</strong>
+                    </li>
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥉 省级三等奖</span>
+                        <strong>第十七届“中国硬件杯”(AIC)全国大学生计算机应用能力与信息素养大赛</strong><br><span style="color: var(--text-secondary);">(广东省赛区)</span>
+                    </li>
+                    <li
+                        style="background: rgba(244, 114, 182, 0.05); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(244, 114, 182, 0.2); margin-bottom: 0;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🥉 省级三等奖</span>
+                        <strong>第十届“挑战杯”广东大学生课外学术科技作品竞赛</strong>
                     </li>
                 </ul>
             </div>
@@ -214,7 +264,8 @@
                         <h4 class="company">北京冕巢航天科技有限公司</h4>
                         <ul class="experience-details">
                             <li><strong>火箭点火器控制系统：</strong> 独立负责全流程研发，完成点火系统的时序逻辑与控制程序开发，精准定义触发、监测与应急中断节点。</li>
-                            <li><strong>上位机与算法设计：</strong> 独立开发 Python 上位机软件（已获软著），实现参数配置及实时监控；设计基于九轴传感器与舵机的火箭姿态控制算法。</li>
+                            <li><strong>上位机与算法设计：</strong> 独立开发 Python 上位机软件（已获软著），实现参数配置及实时监控；设计基于九轴传感器与舵机的火箭姿态控制算法。
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -224,4 +275,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
