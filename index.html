@@ -89,25 +89,24 @@
                 style="font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.8rem;">
                 💻 作品简介</h3>
             <div class="portfolio-grid" style="margin-bottom: 4rem;">
-                <!-- 嵌赛小车车 -->
+                <!-- SoC图像传输系统 (嵌赛) -->
                 <div class="glass-card project-card">
                     <div class="project-icon">🤖</div>
                     <div class="project-content">
-                        <h3>基于 YOLOv8 的智能柚园巡检机器人</h3>
+                        <h3>SoC异构架构的图像传输系统 (嵌赛)</h3>
                         <p><strong>第八届全国大学生嵌入式芯片与系统设计大赛 - 国家级一等奖</strong><br><br>
-                            作为团队负责人，统筹项目并设计机械结构。开发基于STM32的小车控制系统，实现精准喷药与基础运动闭环。集成LoRa无线通信解决信号干扰，并引入YOLOv8实现柚子树苗病虫害识别，开发交互网页。获大创“优秀”提前结项及2项软著1项专利。
+                            基于安路PH1A FPGA与SoC的异构协同架构构建全栈式解决方案。FPGA负责全流程ISP硬件加速（涵盖去噪、白平衡等18种图像算法）、低延迟PWM电机驱动与千兆以太网高速流媒体传输；内置SoC边缘侧以及FPGA端分别部署MobileNet和LeNet轻量级神经网络实现目标识别。项目集成了多链路网通控制并自主开发了多功能可视化上位机。
                         </p>
-                        <div class="project-images" style="display: flex; gap: 10px; margin-bottom: 1.5rem;">
-                            <img src="qiansai1 (1).jpg" alt="嵌赛国一作品图1"
-                                style="width: 48%; border-radius: 12px; object-fit: cover;">
-                            <img src="qiansai1 (2).jpg" alt="嵌赛国一作品图2"
-                                style="width: 48%; border-radius: 12px; object-fit: cover;">
+                        <div class="project-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem;">
+                            <img src="qiansai1 (1).jpg" alt="SoC图像系统实物"
+                                style="width: 100%; height: 180px; border-radius: 12px; object-fit: cover;">
+                            <img src="qiansai1 (2).jpg" alt="上位机调度"
+                                style="width: 100%; height: 180px; border-radius: 12px; object-fit: cover;">
                         </div>
                         <div class="tags">
-                            <span class="tag">STM32控制</span>
-                            <span class="tag">LoRa通信</span>
-                            <span class="tag">YOLOv8</span>
-                            <span class="tag">大创优秀</span>
+                            <span class="tag">FPGA/SoC异构</span>
+                            <span class="tag">全流程ISP加速</span>
+                            <span class="tag">神经网络边缘部署</span>
                         </div>
                     </div>
                 </div>
@@ -120,10 +119,9 @@
                         <p><strong>第九届全国大学生集成电路创新创业大赛 - 华南赛区二等奖</strong><br><br>
                             在Zynq Artix-7上落地端到端高性能ISP方案，开发22种图像处理增强算法。通过多字节收发串口程序融合多源环境传感器数据。使用PyQt6开发交互上位机，并在Zynq
                             7020上部署基于MobileNet的天气识别模型。相关论文目前在投《集成电路与嵌入式系统》。</p>
-                        <div class="project-images"
-                            style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
+                        <div class="project-images" style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 1.5rem; margin-top: 10px;">
                             <img src="海报.jpg" alt="集创赛天气图像处理系统海报"
-                                style="width: 100%; border-radius: 12px; object-fit: cover;">
+                                style="width: 100%; height: 180px; border-radius: 12px; object-fit: cover; object-position: top;">
                         </div>
                         <div class="tags">
                             <span class="tag">Verilog/FPGA</span>
@@ -138,20 +136,20 @@
                     <div class="project-icon"> 📡 </div>
                     <div class="project-content">
                         <h3>基于LoRa通信的智能柚园监控系统</h3>
-                        <p><strong>结合物联网与低功耗广域网的智慧农业实践</strong><br><br>
-                            通过搭载LoRa通信模块搭建果园低功耗无线传感网络，有效解决果园远距离传输的信号干扰问题。构建上位机可视化监控平台，实现果园生态环境指标的实时采集与控制交互，赋能乡村农业智能化转型。
+                        <p><strong>第八届全国大学生嵌入式芯片与系统设计大赛</strong><br><br>
+                            作为团队负责人，统筹项目并设计机械结构。开发基于STM32的小车控制系统，实现精准喷药与基础运动闭环。集成LoRa无线通信解决信号干扰，并引入YOLOv8实现柚子树苗病虫害识别，开发交互网页。获大创“优秀”提前结项及2项软著1项专利。
                         </p>
-                        <div class="project-images"
-                            style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
+                        <div class="project-images" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; margin-top: 10px;">
                             <img src="lora1.png" alt="LoRa通信系统框架图"
-                                style="width: 48%; border-radius: 12px; object-fit: cover;">
+                                style="width: 100%; height: 180px; border-radius: 12px; object-fit: cover;">
                             <img src="lora2.png" alt="果园可视化监控平台"
-                                style="width: 48%; border-radius: 12px; object-fit: cover;">
+                                style="width: 100%; height: 180px; border-radius: 12px; object-fit: cover;">
                         </div>
                         <div class="tags">
-                            <span class="tag">LoRa低功耗通信</span>
-                            <span class="tag">物联网监测</span>
-                            <span class="tag">可视化管理平台</span>
+                            <span class="tag">STM32控制</span>
+                            <span class="tag">LoRa通信</span>
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">软著专利</span>
                         </div>
                     </div>
                 </div>
@@ -163,10 +161,9 @@
                         <h3>数字芯片与系统设计 (芯赛)</h3>
                         <p><strong>第八届全国大学生嵌入式芯片与系统设计大赛 - 芯片设计赛道 国家级二等奖</strong><br><br>
                             完成数字芯片相关创新设计，涉及RTL代码编写与系统开发验证，最终荣获全国芯片设计赛道国二奖项。并在其中承担了核心开发与验证任务。</p>
-                        <div class="project-images"
-                            style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 1.5rem;">
+                        <div class="project-images" style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 1.5rem; margin-top: 10px;">
                             <img src="芯片设计.png" alt="国二芯片设计海报"
-                                style="width: 100%; border-radius: 12px; object-fit: cover;">
+                                style="width: 100%; height: 180px; border-radius: 12px; object-fit: cover; object-position: top;">
                         </div>
                         <div class="tags">
                             <span class="tag">芯片设计</span>
@@ -177,7 +174,7 @@
                 </div>
 
                 <!-- 面向荔枝病虫害的多智能体协同系统  -->
-                <div class="glass-card project-card" style="grid-column: 1 / -1;">
+                <div class="glass-card project-card">
                     <div class="project-icon"> 🔬 </div>
                     <div class="project-content">
                         <h3>面向荔枝病虫害的多智能体协同系统 (大创)</h3>
