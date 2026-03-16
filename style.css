@@ -209,10 +209,12 @@ img {
 .portrait-card {
     border-radius: 28px;
     overflow: hidden;
+    max-width: 360px;
+    justify-self: end;
 }
 
 .portrait {
-    aspect-ratio: 5 / 6;
+    aspect-ratio: 4 / 4.6;
     object-fit: cover;
     width: 100%;
 }
@@ -369,18 +371,24 @@ img {
 }
 
 .award-card {
-    min-height: 220px;
+    min-height: 180px;
 }
 
 .award-level {
     color: var(--accent);
     display: inline-block;
     font-family: "Outfit", sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     margin-bottom: 14px;
     text-transform: uppercase;
+}
+
+.award-card h3 {
+    font-size: 1.08rem;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
 .timeline {
@@ -480,6 +488,11 @@ img {
 
     .hero-section {
         min-height: auto;
+    }
+
+    .portrait-card {
+        justify-self: start;
+        max-width: 300px;
     }
 }
 
