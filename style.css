@@ -57,7 +57,7 @@ img {
 
 .site-shell {
     display: grid;
-    gap: 24px;
+    gap: 18px;
     grid-template-columns: 240px minmax(0, 1fr);
     margin: 0 auto;
     max-width: 1240px;
@@ -174,11 +174,11 @@ img {
 
 .page {
     min-width: 0;
-    padding: 2px 0 56px;
+    padding: 0 0 40px;
 }
 
 .section {
-    padding: 44px 0;
+    padding: 30px 0;
     scroll-margin-top: 18px;
 }
 
@@ -230,7 +230,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 .button {
@@ -266,7 +266,7 @@ img {
 }
 
 .section-heading {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .section-heading h2 {
@@ -277,7 +277,7 @@ img {
 .project-grid,
 .award-grid {
     display: grid;
-    gap: 14px;
+    gap: 10px;
 }
 
 .info-grid {
@@ -310,7 +310,7 @@ img {
 }
 
 .detail-list li + li {
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .card-head {
@@ -350,7 +350,7 @@ img {
 .project-media {
     display: grid;
     gap: 10px;
-    margin: 14px 0 12px;
+    margin: 10px 0 8px;
 }
 
 .project-media.two-up {
@@ -406,7 +406,7 @@ img {
 
 .timeline {
     display: grid;
-    gap: 14px;
+    gap: 10px;
 }
 
 .timeline-item {
@@ -463,12 +463,12 @@ img {
 
 .contact-card {
     display: grid;
-    gap: 14px;
+    gap: 10px;
 }
 
 .contact-grid {
     display: grid;
-    gap: 12px;
+    gap: 10px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -501,7 +501,7 @@ img {
     }
 
     .site-shell {
-        gap: 14px;
+        gap: 10px;
         padding: 12px;
     }
 
@@ -521,11 +521,11 @@ img {
     }
 
     .page {
-        padding: 0 0 40px;
+        padding: 0 0 28px;
     }
 
     .section {
-        padding: 34px 0;
+        padding: 24px 0;
     }
 
     .panel {
