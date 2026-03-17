@@ -50,5 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const hash = window.location.hash.replace("#", "");
     if (hash) {
         setActiveLink(hash);
+        return;
+    }
+
+    if (sections.length > 0) {
+        setActiveLink(sections[0].id);
     }
 });

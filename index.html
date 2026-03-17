@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="胡琳的个人主页，展示教育背景、项目经历、奖项与实践经历。">
+    <meta name="description" content="胡琳的个人主页，展示个人信息、项目经历、重点奖项与实践经历。">
     <title>胡琳 | 个人主页</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,12 @@
     <div class="site-shell">
         <aside class="sidebar">
             <div class="sidebar-card">
-                <a class="brand" href="#intro">Hu Lin</a>
-                <p class="sidebar-role">电子科学与技术本科生</p>
-                <p class="sidebar-note">希望进入优秀团队持续学习，在项目和科研中把工程能力打磨得更扎实。</p>
+                <div class="brand-group">
+                    <a class="brand" href="#profile">胡琳</a>
+                    <span class="brand-sub">LynnHoo</span>
+                </div>
+                <p class="sidebar-role">华南农业大学电子科学与技术本科生</p>
+                <p class="sidebar-note">聚焦 FPGA、嵌入式系统、智能感知与芯片设计，持续在科研项目与工程实践中打磨系统能力。</p>
 
                 <div class="sidebar-photo-card">
                     <img src="my_photo.jpg" alt="胡琳证件照" class="sidebar-photo">
@@ -39,34 +42,72 @@
                         <span class="sidebar-label">排名</span>
                         <strong>6 / 100</strong>
                     </div>
+                    <div>
+                        <span class="sidebar-label">方向</span>
+                        <strong>FPGA / 嵌入式 / 芯片</strong>
+                    </div>
                 </div>
 
                 <nav class="nav-links">
                     <span class="nav-title">索引</span>
-                    <a class="nav-link active" href="#intro">首页</a>
+                    <a class="nav-link active" href="#profile">个人信息</a>
                     <a class="nav-link" href="#about">自我介绍</a>
                     <a class="nav-link" href="#projects">项目经历</a>
-                    <a class="nav-link" href="#awards">奖项</a>
+                    <a class="nav-link" href="#awards">重点奖项</a>
                     <a class="nav-link" href="#experience">实践经历</a>
-                    <a class="nav-link" href="#contact">联系我</a>
                 </nav>
             </div>
         </aside>
 
         <main class="page">
-            <section id="intro" class="section hero-section">
-                <div class="hero-copy" data-reveal>
-                    <p class="eyebrow">Personal Website</p>
-                    <h1>胡琳</h1>
-                    <p class="hero-subtitle">华南农业大学电子科学与技术专业本科生，聚焦 FPGA、嵌入式系统、智能感知与芯片设计。</p>
-                    <p class="hero-summary">
-                        目前，GPA 4.42/5.0，专业排名 6/100，持续参与图像处理、智能硬件、嵌入式控制和农业智能化相关项目，具备从底层实现到系统联调的完整开发经验。
-                    </p>
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#projects">查看项目</a>
-                        <a class="button button-secondary" href="#awards">查看奖项</a>
-                    </div>
+            <section id="profile" class="section profile-section">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Profile</p>
+                    <h2>个人信息</h2>
                 </div>
+                <article class="profile-panel panel" data-reveal>
+                    <div class="profile-main">
+                        <h1>胡琳 <span>LynnHoo</span></h1>
+                        <p class="profile-summary">
+                            华南农业大学电子科学与技术专业本科生，GPA 4.42/5.0，专业排名 6/100，关注 FPGA、嵌入式系统、智能感知与芯片设计，
+                            希望继续在高质量科研与工程项目中沉淀系统开发能力。
+                        </p>
+                    </div>
+                    <div class="profile-grid">
+                        <div class="info-item">
+                            <span class="info-label">学校</span>
+                            <strong class="info-value">华南农业大学</strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">专业</span>
+                            <strong class="info-value">电子科学与技术</strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">电话</span>
+                            <a class="info-value" href="tel:14706824492">14706824492</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">邮箱</span>
+                            <a class="info-value" href="mailto:1436254290@163.com">1436254290@163.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">英语</span>
+                            <strong class="info-value">CET-4 529 / CET-6 487</strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">所在地</span>
+                            <strong class="info-value">广州</strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">政治面貌</span>
+                            <strong class="info-value">预备党员</strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">技能</span>
+                            <strong class="info-value">C / Verilog / Python / Vivado</strong>
+                        </div>
+                    </div>
+                </article>
             </section>
 
             <section id="about" class="section">
@@ -74,26 +115,14 @@
                     <p class="eyebrow">Overview</p>
                     <h2>自我介绍</h2>
                 </div>
-                <div class="info-grid">
-                    <article class="panel" data-reveal>
-                        <h3>关于我</h3>
-                        <ul class="detail-list">
-                            <li>我是华南农业大学电子科学与技术专业本科生，平时主要关注 FPGA、嵌入式系统、芯片设计和智能感知相关方向。</li>
-                            <li>我很喜欢把一个想法一步步做成可运行的系统，从硬件搭建、代码实现到联调验证，这个过程让我很有成就感。</li>
-                            <li>在学习上我比较踏实，也愿意花时间啃底层原理，遇到问题会反复排查并坚持找到原因。</li>
-                            <li>我希望自己不仅能把任务完成，更能在项目里真正承担责任，和团队一起把事情做扎实、做完整。</li>
-                        </ul>
-                    </article>
-                    <article class="panel" data-reveal>
-                        <h3>我的优势</h3>
-                        <ul class="detail-list">
-                            <li>动手能力比较强，能够较快进入项目状态，完成硬件、软件和系统联调中的具体工作。</li>
-                            <li>面对复杂问题时有耐心，尤其愿意处理调试、验证和优化这类需要反复打磨的环节。</li>
-                            <li>在团队合作中我愿意沟通和补位，既能独立推进任务，也能和队友一起把整体节奏往前带。</li>
-                            <li>我希望进入更优秀的团队继续学习，在更高强度、更高标准的环境里提升自己的工程能力和科研视野。</li>
-                        </ul>
-                    </article>
-                </div>
+                <article class="panel about-panel" data-reveal>
+                    <p>
+                        我是华南农业大学电子科学与技术专业本科生，平时主要围绕 FPGA、嵌入式系统、智能感知和芯片设计开展学习与实践。
+                        我比较喜欢把一个想法一步步做成可运行的系统，也愿意花时间去啃底层原理、排查问题和反复调试。无论是在竞赛、
+                        科研还是工程类项目中，我都能较快进入状态，承担具体开发任务，并持续把硬件、软件和系统联调做扎实。我希望在未来
+                        的学习和研究中继续进入更高标准的环境，不断提升自己的工程实现能力与科研视野。
+                    </p>
+                </article>
             </section>
 
             <section id="projects" class="section">
@@ -108,20 +137,21 @@
                             <span class="card-index">01</span>
                             <div>
                                 <h3>SoC 异构架构图像传输系统</h3>
-                                <p class="card-meta">第八届全国大学生嵌入式芯片与系统设计大赛国家级一等奖</p>
+                                <p class="card-meta">全国大学生嵌入式芯片与系统设计竞赛国家一等奖</p>
                             </div>
                         </div>
                         <p>
-                            基于 FPGA 与 SoC 完成图像采集、ISP 加速、网络传输和轻量模型边缘部署的一体化系统设计。
+                            基于 FPGA 与 SoC 完成图像采集、ISP 加速、网络传输和轻量模型边缘部署的一体化系统设计，突出系统联调、
+                            实时性优化和异构协同能力。
                         </p>
-                        <div class="project-media two-up">
-                            <img src="qiansai1 (1).jpg" alt="SoC 图像传输系统实物">
-                            <img src="qiansai1 (2).jpg" alt="SoC 图像传输系统上位机界面">
-                        </div>
                         <div class="tag-row">
                             <span class="tag">FPGA / SoC</span>
-                            <span class="tag">ISP 加速</span>
-                            <span class="tag">边缘部署</span>
+                            <span class="tag">ISP</span>
+                            <span class="tag">图像传输</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="button button-secondary" href="projects/soc-image-system.html" target="_blank"
+                                rel="noreferrer">了解更多</a>
                         </div>
                     </article>
 
@@ -130,19 +160,20 @@
                             <span class="card-index">02</span>
                             <div>
                                 <h3>多传感器融合天气图像处理系统</h3>
-                                <p class="card-meta">第九届全国大学生集成电路创新创业大赛华南赛区二等奖</p>
+                                <p class="card-meta">全国大学生集成电路创新创业大赛华南赛区二等奖</p>
                             </div>
                         </div>
                         <p>
-                            在 Zynq 平台上完成 ISP 算法、传感器数据接入、PyQt6 上位机和天气识别模型部署。
+                            在 Zynq 平台上完成 ISP 算法实现、天气图像处理、上位机交互和模型部署，形成从感知、处理到展示的一体化方案。
                         </p>
-                        <div class="project-media single">
-                            <img src="海报.jpg" alt="多传感器融合天气图像处理系统海报">
-                        </div>
                         <div class="tag-row">
-                            <span class="tag">Verilog</span>
                             <span class="tag">Zynq</span>
+                            <span class="tag">Verilog</span>
                             <span class="tag">PyQt6</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="button button-secondary" href="projects/weather-image-system.html" target="_blank"
+                                rel="noreferrer">了解更多</a>
                         </div>
                     </article>
 
@@ -155,17 +186,16 @@
                             </div>
                         </div>
                         <p>
-                            负责项目推进与控制系统开发，完成 STM32 运动控制、LoRa 通信联调和 YOLOv8 病虫害识别接入。
+                            负责项目推进与控制系统开发，完成 STM32 运动控制、LoRa 通信联调和 YOLOv8 病虫害识别接入，推动项目从原型到展示闭环。
                         </p>
-                        <div class="project-media two-up">
-                            <img src="lora1.png" alt="LoRa 柚园巡检机器人系统框架">
-                            <img src="lora2.png" alt="LoRa 柚园巡检机器人可视化平台">
-                        </div>
                         <div class="tag-row">
                             <span class="tag">STM32</span>
                             <span class="tag">LoRa</span>
                             <span class="tag">YOLOv8</span>
-                            <span class="tag">软著 / 专利</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="button button-secondary" href="projects/lora-robot.html" target="_blank"
+                                rel="noreferrer">了解更多</a>
                         </div>
                     </article>
 
@@ -178,13 +208,16 @@
                             </div>
                         </div>
                         <p>
-                            参与荔枝病虫害多智能体系统设计，围绕识别、定位和多模态诊断流程进行优化。
+                            围绕病虫害识别、定位与多模态协同诊断开展系统优化，参与算法改进、系统设计和成果沉淀，形成科研与应用结合的完整路径。
                         </p>
                         <div class="tag-row">
                             <span class="tag">CLIP</span>
                             <span class="tag">Faster R-CNN</span>
                             <span class="tag">多智能体</span>
-                            <span class="tag">论文录用</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="button button-secondary" href="projects/lychee-multi-agent.html" target="_blank"
+                                rel="noreferrer">了解更多</a>
                         </div>
                     </article>
                 </div>
@@ -196,49 +229,44 @@
                     <h2>重点奖项</h2>
                 </div>
 
-                <div class="award-grid">
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">国家级一等奖</span>
-                        <h3>第八届全国大学生嵌入式芯片与系统设计大赛</h3>
-                        <p>FPGA 创新设计赛道</p>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">国家级二等奖</span>
-                        <h3>第八届全国大学生嵌入式芯片与系统设计大赛</h3>
-                        <p>芯片设计赛道</p>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">国家级三等奖</span>
-                        <h3>2025 年中国大学生机械工程创新创意大赛</h3>
-                        <p>创新创意项目</p>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">国家级三等奖</span>
-                        <h3>第十八届全国大学生节能减排社会实践与科技竞赛</h3>
-                        <p>科技竞赛项目</p>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">赛区二等奖</span>
-                        <h3>第九届全国大学生集成电路创新创业大赛</h3>
-                        <p>华南赛区</p>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">省级二等奖</span>
-                        <h3>“大唐杯”全国大学生新一代信息通信技术大赛</h3>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">省级二等奖</span>
-                        <h3>第八届“菱朗杯”广东省汽车与农机电子环保大赛</h3>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">省级三等奖</span>
-                        <h3>第九届“菱朗杯”广东省汽车与农机电子环保大赛</h3>
-                    </article>
-                    <article class="award-card panel" data-reveal>
-                        <span class="award-level">省级三等奖</span>
-                        <h3>全球校园人工智能算法精英大赛·算法创新赛</h3>
-                    </article>
-                </div>
+                <ul class="award-list" data-reveal>
+                    <li>
+                        <strong>国家一等奖</strong>
+                        <span>第八届全国大学生嵌入式芯片与系统设计大赛 FPGA 创新设计赛道</span>
+                    </li>
+                    <li>
+                        <strong>国家二等奖</strong>
+                        <span>第八届全国大学生嵌入式芯片与系统设计大赛 芯片设计赛道</span>
+                    </li>
+                    <li>
+                        <strong>国家三等奖</strong>
+                        <span>2025 年中国大学生机械工程创新创意大赛</span>
+                    </li>
+                    <li>
+                        <strong>国家三等奖</strong>
+                        <span>第十八届全国大学生节能减排社会实践与科技竞赛</span>
+                    </li>
+                    <li>
+                        <strong>赛区二等奖</strong>
+                        <span>第九届全国大学生集成电路创新创业大赛华南赛区</span>
+                    </li>
+                    <li>
+                        <strong>省级二等奖</strong>
+                        <span>“大唐杯”全国大学生新一代信息通信技术大赛</span>
+                    </li>
+                    <li>
+                        <strong>省级二等奖</strong>
+                        <span>第八届“华朗杯”广东省汽车与农机电子环保大赛</span>
+                    </li>
+                    <li>
+                        <strong>省级三等奖</strong>
+                        <span>第九届“华朗杯”广东省汽车与农机电子环保大赛</span>
+                    </li>
+                    <li>
+                        <strong>省级三等奖</strong>
+                        <span>全球校园人工智能算法精英大赛算法创新赛</span>
+                    </li>
+                </ul>
             </section>
 
             <section id="experience" class="section">
@@ -268,35 +296,11 @@
                             <p class="timeline-company">校内项目与竞赛团队</p>
                         </div>
                         <ul class="detail-list">
-                            <li>围绕 FPGA 图像处理、边缘智能、智能农业和芯片设计开展项目研发与论文写作。</li>
+                            <li>围绕 FPGA 图像处理、边缘智能、智慧农业和芯片设计持续开展项目研发与论文撰写。</li>
                             <li>论文《基于 YOLOv11n-ACE 的轻量化荔枝 FPN 改进病虫害检测方法》已被《农业机械学报》录用。</li>
-                            <li>持续参与系统联调、算法优化、硬件部署与成果整理，形成较完整的科研与竞赛闭环经验。</li>
+                            <li>持续参与系统联调、算法优化、硬件部署与成果整理，形成了较完整的科研与竞赛闭环经验。</li>
                         </ul>
                     </article>
-                </div>
-            </section>
-
-            <section id="contact" class="section contact-section">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Contact</p>
-                    <h2>联系我</h2>
-                </div>
-                <div class="contact-card panel" data-reveal>
-                    <p>作为一名仍在成长中的学生，我很希望进入优秀的团队继续学习和锻炼。如果你愿意给我一个交流或合作的机会，我会非常珍惜，也期待在真实项目中不断提升自己。</p>
-                    <div class="contact-grid">
-                        <div>
-                            <span class="contact-label">邮箱</span>
-                            <a href="mailto:1436254290@163.com">1436254290@163.com</a>
-                        </div>
-                        <div>
-                            <span class="contact-label">电话</span>
-                            <a href="tel:14706824492">14706824492</a>
-                        </div>
-                        <div>
-                            <span class="contact-label">地点</span>
-                            <span>广州</span>
-                        </div>
-                    </div>
                 </div>
             </section>
         </main>
