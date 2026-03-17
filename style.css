@@ -194,8 +194,8 @@ img {
 .profile-intro {
     align-items: center;
     display: grid;
-    gap: 16px;
-    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 14px;
+    grid-template-columns: 104px minmax(0, 1fr);
 }
 
 .profile-photo-card {
@@ -204,8 +204,8 @@ img {
 }
 
 .profile-photo {
-    width: 128px;
-    height: 164px;
+    width: 96px;
+    height: 124px;
     object-fit: cover;
     border-radius: 16px;
     border: 1px solid rgba(209, 111, 151, 0.18);
@@ -230,16 +230,35 @@ img {
     text-transform: uppercase;
 }
 
-.profile-summary {
-    color: var(--muted);
-    font-size: 0.94rem;
-    max-width: 760px;
+.profile-meta {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profile-lead {
+    color: var(--text);
+    font-size: 0.96rem;
+    font-weight: 600;
+}
+
+.profile-badge {
+    background: rgba(209, 111, 151, 0.08);
+    border: 1px solid rgba(209, 111, 151, 0.16);
+    border-radius: 999px;
+    color: var(--accent-warm);
+    display: inline-flex;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
 }
 
 .profile-grid {
     display: grid;
     gap: 8px;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .info-item {
@@ -558,8 +577,8 @@ img {
     }
 
     .profile-photo {
-        width: 108px;
-        height: 138px;
+        width: 88px;
+        height: 112px;
     }
 
     .award-list li {
