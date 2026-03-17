@@ -493,6 +493,17 @@ img {
     margin-top: 14px;
 }
 
+.detail-figure {
+    margin-top: 10px;
+}
+
+.detail-figure img {
+    border: 1px solid rgba(209, 111, 151, 0.14);
+    border-radius: 14px;
+    display: block;
+    width: 100%;
+}
+
 .detail-section h2 {
     font-size: 1.14rem;
     margin-bottom: 10px;
