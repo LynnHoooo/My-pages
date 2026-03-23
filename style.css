@@ -243,8 +243,32 @@ img {
 }
 
 .hero-copy h1 {
-    font-size: clamp(4rem, 11vw, 8rem);
+    font-size: clamp(2.8rem, 7vw, 5.1rem);
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.hero-signature {
+    color: var(--accent);
+    display: inline-flex;
+    font-family: "Manrope", "Noto Sans SC", sans-serif;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
     margin-bottom: 22px;
+    padding-left: 18px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.hero-signature::before {
+    background: linear-gradient(180deg, var(--accent), rgba(138, 75, 42, 0));
+    content: "";
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 2px;
 }
 
 .hero-lead {
@@ -341,8 +365,8 @@ img {
 .hero-ribbon span {
     color: var(--muted);
     font-family: "Manrope", "Noto Sans SC", sans-serif;
-    font-size: 0.95rem;
-    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
 }
 
 .hero-trace {
@@ -1434,7 +1458,7 @@ img {
     }
 
     .hero-copy h1 {
-        font-size: clamp(3rem, 19vw, 5.2rem);
+        font-size: clamp(2.6rem, 16vw, 4rem);
     }
 
     .hero-copy {
