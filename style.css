@@ -33,8 +33,10 @@ body {
         linear-gradient(180deg, #f8f3ea 0%, var(--bg) 52%, #ece4d7 100%);
     color: var(--ink);
     font-family: "Noto Sans SC", sans-serif;
-    line-height: 1.72;
+    font-weight: 450;
+    line-height: 1.78;
     min-height: 100vh;
+    text-rendering: optimizeLegibility;
 }
 
 body::after {
@@ -200,6 +202,15 @@ img {
     max-width: 760px;
 }
 
+.page p,
+.feature-list li,
+.timeline-content p,
+.project-preface-copy,
+.section-preface-copy,
+.about-cloud-note {
+    font-weight: 450;
+}
+
 .section-heading h2,
 .hero-copy h1,
 .project-feature h3,
@@ -207,7 +218,7 @@ img {
 .timeline-role {
     font-family: "Manrope", sans-serif;
     letter-spacing: -0.05em;
-    line-height: 1.04;
+    line-height: 1.02;
 }
 
 .section-heading h2 {
@@ -215,41 +226,45 @@ img {
 }
 
 .hero {
-    align-items: start;
+    align-items: end;
     display: grid;
-    gap: 44px;
-    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+    gap: 24px 56px;
+    grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
     min-height: calc(100vh - 56px);
     padding-top: 18px;
+    position: relative;
 }
 
 .hero-copy {
-    padding: 38px 0 10px;
+    max-width: 760px;
+    padding: 60px 0 22px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-copy h1 {
     font-size: clamp(4rem, 11vw, 8rem);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .hero-lead {
     color: var(--muted);
-    font-size: clamp(1rem, 1.6vw, 1.24rem);
-    max-width: 700px;
+    font-size: clamp(1.06rem, 1.7vw, 1.3rem);
+    max-width: 680px;
 }
 
 .hero-sublead {
     color: var(--muted);
-    font-size: 1rem;
-    margin-top: 16px;
-    max-width: 620px;
+    font-size: 1.02rem;
+    margin-top: 18px;
+    max-width: 560px;
 }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 28px;
+    margin-top: 30px;
 }
 
 .button {
@@ -278,9 +293,12 @@ img {
 
 .hero-visual {
     display: grid;
-    gap: 14px;
-    justify-items: start;
-    padding-top: 18px;
+    gap: 18px;
+    justify-items: end;
+    margin-top: 122px;
+    padding-top: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-aside,
@@ -309,6 +327,49 @@ img {
     border-top: 1px solid var(--line-strong);
     margin-top: 10px;
     padding-top: 14px;
+}
+
+.hero-ribbon {
+    border-top: 1px solid var(--line-strong);
+    display: grid;
+    gap: 6px;
+    margin-top: 34px;
+    max-width: 520px;
+    padding-top: 14px;
+}
+
+.hero-ribbon span {
+    color: var(--muted);
+    font-family: "Manrope", "Noto Sans SC", sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+}
+
+.hero-trace {
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.hero-trace-line {
+    background: linear-gradient(90deg, rgba(138, 75, 42, 0.18), rgba(138, 75, 42, 0));
+    display: block;
+    height: 1px;
+    position: absolute;
+}
+
+.hero-trace-line-a {
+    left: 8%;
+    top: 18%;
+    transform: rotate(-10deg);
+    width: 26%;
+}
+
+.hero-trace-line-b {
+    right: 10%;
+    top: 72%;
+    transform: rotate(11deg);
+    width: 22%;
 }
 
 .portrait-wrap {
@@ -1040,7 +1101,7 @@ img {
 }
 
 .timeline-role {
-    font-size: 1.3rem;
+    font-size: 1.34rem;
     margin-bottom: 6px;
 }
 
@@ -1288,7 +1349,16 @@ img {
 
     .hero-visual {
         justify-items: start;
+        margin-top: 0;
         padding-top: 0;
+    }
+
+    .hero-copy {
+        padding-top: 22px;
+    }
+
+    .hero-trace {
+        display: none;
     }
 
     .about-story {
