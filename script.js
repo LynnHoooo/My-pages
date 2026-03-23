@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = Array.from(document.querySelectorAll(".nav-link"));
     const revealItems = Array.from(document.querySelectorAll("[data-reveal]"));
     const spotlightCards = Array.from(document.querySelectorAll(".project-feature, .project-card, .detail-card, .timeline-item, .metric-card"));
+    const cloudPanels = Array.from(document.querySelectorAll(".about-cloud-panel"));
 
     const setActiveLink = (id) => {
         navLinks.forEach((link) => {
@@ -68,6 +69,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
             card.style.setProperty("--spot-x", `${x}%`);
             card.style.setProperty("--spot-y", `${y}%`);
+        });
+    });
+
+    cloudPanels.forEach((panel) => {
+        const words = Array.from(panel.querySelectorAll(".cloud-word"));
+
+        panel.addEventListener("pointermove", (event) => {
+            const rect = panel.getBoundingClientRect();
+            const offsetX = (event.clientX - rect.left - rect.width / 2) / rect.width;
+            const offsetY = (event.clientY - rect.top - rect.height / 2) / rect.height;
+
+            words.forEach((word, index) => {
+                const depth = (index % 4) + 1;
+                word.style.setProperty("--shift-x", `${offsetX * depth * 6}px`);
+                word.style.setProperty("--shift-y", `${offsetY * depth * 6}px`);
+            });
+        });
+
+        panel.addEventListener("pointerleave", () => {
+            words.forEach((word) => {
+                word.style.setProperty("--shift-x", "0px");
+                word.style.setProperty("--shift-y", "0px");
+            });
         });
     });
 
