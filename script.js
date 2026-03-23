@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sections = Array.from(document.querySelectorAll("main section[id]"));
     const navLinks = Array.from(document.querySelectorAll(".nav-link"));
-    const revealItems = document.querySelectorAll("[data-reveal]");
+    const revealItems = Array.from(document.querySelectorAll("[data-reveal]"));
+    const spotlightCards = Array.from(document.querySelectorAll(".project-feature, .project-card, .detail-card, .timeline-item, .metric-card"));
 
     const setActiveLink = (id) => {
         navLinks.forEach((link) => {
@@ -9,6 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.toggle("active", isActive);
         });
     };
+
+    const updateScrollProgress = () => {
+        const scrollTop = window.scrollY;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+
+        document.documentElement.style.setProperty("--scroll-progress", `${progress}`);
+    };
+
+    revealItems.forEach((item, index) => {
+        item.style.setProperty("--reveal-delay", `${Math.min(index * 0.04, 0.32)}s`);
+    });
 
     const sectionObserver = new IntersectionObserver(
         (entries) => {
@@ -46,6 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     revealItems.forEach((item) => revealObserver.observe(item));
+
+    spotlightCards.forEach((card) => {
+        card.addEventListener("pointermove", (event) => {
+            const rect = card.getBoundingClientRect();
+            const x = ((event.clientX - rect.left) / rect.width) * 100;
+            const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+            card.style.setProperty("--spot-x", `${x}%`);
+            card.style.setProperty("--spot-y", `${y}%`);
+        });
+    });
+
+    updateScrollProgress();
+    window.addEventListener("scroll", updateScrollProgress, { passive: true });
 
     const hash = window.location.hash.replace("#", "");
     if (hash) {

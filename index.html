@@ -4,279 +4,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="胡琳的个人主页，展示个人信息、项目经历、重点奖项与实践经历。">
+    <meta name="description" content="胡琳的个人主页，展示研究方向、项目经历、代表成果与实践经历。">
     <title>胡琳 | 个人主页</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="page-noise"></div>
     <div class="site-shell">
         <aside class="sidebar">
-            <div class="sidebar-card">
+            <div class="sidebar-inner">
+                <a class="site-mark" href="#profile">
+                    <span class="site-mark-dot"></span>
+                    <span>LYNN HOO</span>
+                </a>
                 <nav class="nav-links">
-                    <span class="nav-title">索引</span>
-                    <a class="nav-link active" href="#profile">个人信息</a>
-                    <a class="nav-link" href="#about">自我介绍</a>
-                    <a class="nav-link" href="#projects">项目经历</a>
-                    <a class="nav-link" href="#awards">重点奖项</a>
-                    <a class="nav-link" href="#experience">实践经历</a>
+                    <a class="nav-link active" href="#profile">首页</a>
+                    <a class="nav-link" href="#about">关于我</a>
+                    <a class="nav-link" href="#projects">项目</a>
+                    <a class="nav-link" href="#awards">成果</a>
+                    <a class="nav-link" href="#experience">经历</a>
                 </nav>
+                <div class="sidebar-note">
+                    <p>电子科学与技术</p>
+                    <p>FPGA / SoC / 嵌入式 / 智能感知</p>
+                </div>
             </div>
         </aside>
 
         <main class="page">
-            <section id="profile" class="section profile-section">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Profile</p>
-                    <h2>个人信息</h2>
+            <section id="profile" class="hero section">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Research-oriented Portfolio</p>
+                    <h1>胡琳</h1>
+                    <p class="hero-lead">
+                        我喜欢做的，不只是“把一个模块写出来”，而是把一套系统真正跑起来。
+                        从 FPGA、SoC、嵌入式控制到智能感知，我更关心的是它们怎么协同、怎么联调、
+                        怎么在真实场景里稳定工作。
+                    </p>
+                    <p class="hero-sublead">
+                        竞赛让我学会在压力里把系统收住，科研让我学会把问题拆得更深。
+                        我想继续沿着这条路，把底层实现、工程落地和研究表达做得更扎实。
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">看代表项目</a>
+                        <a class="button button-secondary" href="#about">了解更多</a>
+                    </div>
                 </div>
-                <article class="profile-panel panel" data-reveal>
-                    <div class="profile-intro">
-                        <div class="profile-photo-card">
-                            <img src="my_photo.jpg" alt="胡琳证件照" class="profile-photo">
+
+                <div class="hero-visual" data-reveal>
+                    <div class="portrait-wrap">
+                        <img src="my_photo.jpg" alt="胡琳照片" class="profile-photo">
+                    </div>
+                    <div class="hero-badges">
+                        <div class="metric-card">
+                            <span class="metric-label">GPA</span>
+                            <strong>4.42 / 5.0</strong>
                         </div>
-                        <div class="profile-main">
-                            <h1>胡琳 <span>LynnHoo</span></h1>
-                            <div class="profile-meta">
-                                <p class="profile-lead">华南农业大学电子科学与技术专业本科生</p>
-                                <span class="profile-badge">GPA 4.42/5.0 | 专业排名 6/100</span>
+                        <div class="metric-card">
+                            <span class="metric-label">Rank</span>
+                            <strong>6 / 100</strong>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">City</span>
+                            <strong>广州</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="intro-strip" data-reveal>
+                <p>华南农业大学电子科学与技术本科生</p>
+                <p>中共党员</p>
+                <p>CET-4 529 / CET-6 487</p>
+                <p>C / Verilog / Python / Vivado</p>
+                <p><a href="mailto:1436254290@163.com">1436254290@163.com</a></p>
+            </section>
+
+            <section class="signal-section section">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Snapshot</p>
+                    <h2>比“做过什么”更重要的，是我怎么把事情做成</h2>
+                </div>
+
+                <div class="signal-grid">
+                    <article class="signal-card signal-card-large" data-reveal>
+                        <p class="signal-label">我最在意的事</p>
+                        <h3>把分散的模块，收成一个真正可运行的系统</h3>
+                        <p>
+                            我对系统级任务会天然更兴奋。接口通了没有、时序稳不稳、链路是不是闭环、
+                            展示时能不能跑起来，这些问题比单点功能本身更吸引我。
+                        </p>
+                    </article>
+
+                    <article class="signal-card" data-reveal>
+                        <p class="signal-number">01</p>
+                        <h3>偏底层</h3>
+                        <p>愿意花时间啃原理、查问题、反复联调，直到系统真的稳定。</p>
+                    </article>
+
+                    <article class="signal-card" data-reveal>
+                        <p class="signal-number">02</p>
+                        <h3>偏闭环</h3>
+                        <p>我不太满足于“做到一半”，更想把采集、处理、控制、展示全部打通。</p>
+                    </article>
+
+                    <article class="signal-card" data-reveal>
+                        <p class="signal-number">03</p>
+                        <h3>偏长期</h3>
+                        <p>喜欢持续迭代同一类问题，让竞赛经验、工程实现和科研沉淀彼此连接。</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="section about-section">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">About</p>
+                    <h2>我不是在堆技术点，而是在慢慢建立自己的系统能力</h2>
+                </div>
+
+                <div class="about-layout">
+                    <article class="about-story editorial-panel" data-reveal>
+                        <p>
+                            我长期关注的是系统级问题。对我来说，硬件、算法和控制链路不是彼此分开的几门课，
+                            而是最后必须一起工作的东西。无论是图像采集与 ISP 加速、SoC 异构协同，
+                            还是嵌入式控制与边缘部署，我都会自然地去想它们怎么连起来。
+                        </p>
+                        <p>
+                            在高强度竞赛和持续推进的科研项目里，我逐渐形成了一套自己的工作方式：
+                            先把复杂系统拆开，搞清楚每层接口和约束，再一层一层往回收，
+                            直到它不是“理论上可以”，而是真的能稳定运行。
+                        </p>
+                        <p>
+                            我希望继续往更高质量的科研与工程项目里走，把这种系统开发能力做深。
+                            如果以后回看现在，我希望看到的不是“我做过很多项目”，而是“我确实越来越能处理复杂系统了”。
+                        </p>
+                    </article>
+
+                    <div class="about-side" data-reveal>
+                        <div class="quote-panel">
+                            <p>“我更擅长的，不是把一项功能做出来，而是把一套东西收成一个系统。”</p>
+                        </div>
+                        <div class="fact-grid">
+                            <div class="fact-card">
+                                <span>方向</span>
+                                <strong>FPGA / SoC / 图像处理</strong>
+                            </div>
+                            <div class="fact-card">
+                                <span>偏好</span>
+                                <strong>底层实现 + 联调验证</strong>
+                            </div>
+                            <div class="fact-card">
+                                <span>习惯</span>
+                                <strong>持续迭代，不怕重复调试</strong>
+                            </div>
+                            <div class="fact-card">
+                                <span>关键词</span>
+                                <strong>工程闭环、系统协同、落地能力</strong>
                             </div>
                         </div>
                     </div>
-                    <div class="profile-grid">
-                        <div class="info-item">
-                            <span class="info-label">电话</span>
-                            <a class="info-value" href="tel:14706824492">14706824492</a>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">邮箱</span>
-                            <a class="info-value" href="mailto:1436254290@163.com">1436254290@163.com</a>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">英语</span>
-                            <strong class="info-value">CET-4 529 / CET-6 487</strong>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">所在地</span>
-                            <strong class="info-value">广州</strong>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">政治面貌</span>
-                            <strong class="info-value">中共党员</strong>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">技能</span>
-                            <strong class="info-value">C / Verilog / Python / Vivado</strong>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </section>
 
-            <section id="about" class="section">
+            <section id="projects" class="section projects-section">
                 <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Overview</p>
-                    <h2>自我介绍</h2>
-                </div>
-                <article class="panel about-panel" data-reveal>
-                    <p>
-                        我是华南农业大学电子科学与技术专业的本科生。在校期间，我深耕于 FPGA 开发、嵌入式系统、智能感知及芯片设计领域，具备从零构建系统的全流程实践经验，能够熟练进行底层原理分析、硬件开发及软硬结合调试。我积极上进，努力学习，无论是在高压力的竞赛环境，还是严谨的科研项目中，我都能迅速切入核心任务，确保系统稳定落地。我也喜欢把一个想法一步步做成可运行的系统，愿意花时间去啃底层原理、排查问题和反复调试，希望继续在高质量科研与工程项目中沉淀系统开发能力，拓展科研视野，为解决复杂系统挑战贡献力量。
-                    </p>
-                </article>
-            </section>
-
-            <section id="projects" class="section">
-                <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Projects</p>
-                    <h2>项目经历</h2>
+                    <p class="eyebrow">Selected Work</p>
+                    <h2>代表项目</h2>
                 </div>
 
-                <div class="project-grid">
-                    <article class="project-card panel" data-reveal>
-                        <div class="card-head">
-                            <span class="card-index">01</span>
+                <div class="project-stack">
+                    <article class="project-feature" data-reveal>
+                        <div class="project-meta-line">
+                            <span>01</span>
+                            <p>全国大学生嵌入式芯片与系统设计竞赛国家一等奖</p>
+                        </div>
+                        <div class="project-body">
                             <div>
                                 <h3>SoC 异构架构图像传输系统</h3>
-                                <p class="card-meta">全国大学生嵌入式芯片与系统设计竞赛国家一等奖</p>
+                                <p>
+                                    这是我最能代表自己的项目之一。它不是单点功能展示，而是从图像采集、ISP 加速、
+                                    网络传输到边缘识别的整套系统设计，也最能体现我在联调、优化和异构协同上的能力。
+                                </p>
+                            </div>
+                            <div class="project-tags">
+                                <span>FPGA / SoC</span>
+                                <span>ISP Pipeline</span>
+                                <span>图像传输</span>
                             </div>
                         </div>
-                        <p>
-                            基于 FPGA 与 SoC 完成图像采集、ISP 加速、网络传输和轻量模型边缘部署的一体化系统设计，突出系统联调、实时优化和异构协同能力。
-                        </p>
-                        <div class="tag-row">
-                            <span class="tag">FPGA / SoC</span>
-                            <span class="tag">ISP</span>
-                            <span class="tag">图像传输</span>
-                        </div>
-                        <div class="project-actions">
-                            <a class="button button-secondary" href="projects/soc-image-system.html" target="_blank"
-                                rel="noreferrer">了解更多</a>
-                        </div>
+                        <a class="project-link" href="projects/soc-image-system.html" target="_blank"
+                            rel="noreferrer">查看详情</a>
                     </article>
 
-                    <article class="project-card panel" data-reveal>
-                        <div class="card-head">
-                            <span class="card-index">02</span>
-                            <div>
-                                <h3>自适应天气感知图像处理 IP 设计</h3>
-                                <p class="card-meta">全国大学生集成电路创新创业大赛华南赛区二等奖</p>
+                    <div class="project-grid">
+                        <article class="project-card" data-reveal>
+                            <div class="project-card-top">
+                                <span class="card-index">02</span>
+                                <p class="card-award">集成电路创新创业大赛华南赛区二等奖</p>
                             </div>
-                        </div>
-                        <p>
-                            基于 Robei EDA 平台构建“环境感知 - 算法决策 - 硬件加速”三级闭环架构，实现复杂天气场景下的实时图像增强、动态算法调度与 720P 高清输出。
-                        </p>
-                        <div class="tag-row">
-                            <span class="tag">Robei EDA</span>
-                            <span class="tag">Verilog</span>
-                            <span class="tag">PyQt5</span>
-                        </div>
-                        <div class="project-actions">
-                            <a class="button button-secondary" href="projects/weather-image-system.html" target="_blank"
-                                rel="noreferrer">了解更多</a>
-                        </div>
-                    </article>
+                            <h3>自适应天气感知图像处理 IP 设计</h3>
+                            <p>
+                                关注复杂天气下的图像退化问题，围绕“环境感知 - 决策调度 - 硬件加速”搭建闭环，
+                                也是我做软硬件协同很典型的一次实践。
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag">Robei EDA</span>
+                                <span class="tag">Verilog</span>
+                                <span class="tag">PyQt5</span>
+                            </div>
+                            <a class="text-link" href="projects/weather-image-system.html" target="_blank"
+                                rel="noreferrer">进入项目页</a>
+                        </article>
 
-                    <article class="project-card panel" data-reveal>
-                        <div class="card-head">
-                            <span class="card-index">03</span>
-                            <div>
-                                <h3>基于 LoRa 通信的智能柑橘园巡检机器人</h3>
-                                <p class="card-meta">大学生创新训练项目，优秀等级提前结项</p>
+                        <article class="project-card" data-reveal>
+                            <div class="project-card-top">
+                                <span class="card-index">03</span>
+                                <p class="card-award">大学生创新训练项目，优秀等级提前结项</p>
                             </div>
-                        </div>
-                        <p>
-                            负责项目推进与控制系统开发，完成 STM32 运动控制、LoRa 通信联调和 YOLOv8 病虫害识别接入，推动项目从原型到展示闭环。
-                        </p>
-                        <div class="tag-row">
-                            <span class="tag">STM32</span>
-                            <span class="tag">LoRa</span>
-                            <span class="tag">YOLOv8</span>
-                        </div>
-                        <div class="project-actions">
-                            <a class="button button-secondary" href="projects/lora-robot.html" target="_blank"
-                                rel="noreferrer">了解更多</a>
-                        </div>
-                    </article>
+                            <h3>基于 LoRa 通信的智能果园巡检机器人</h3>
+                            <p>
+                                负责项目推进、控制系统开发和通信联调，推动识别能力接入展示闭环。
+                                对我来说，它更像一次“从原型走到完整展示”的系统训练。
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag">STM32</span>
+                                <span class="tag">LoRa</span>
+                                <span class="tag">YOLOv8</span>
+                            </div>
+                            <a class="text-link" href="projects/lora-robot.html" target="_blank"
+                                rel="noreferrer">进入项目页</a>
+                        </article>
 
-                    <article class="project-card panel" data-reveal>
-                        <div class="card-head">
-                            <span class="card-index">04</span>
-                            <div>
-                                <h3>面向荔枝病虫害诊断与防治的多智能体协同系统</h3>
-                                <p class="card-meta">国家级大学生创新训练项目</p>
+                        <article class="project-card project-card-wide" data-reveal>
+                            <div class="project-card-top">
+                                <span class="card-index">04</span>
+                                <p class="card-award">国家级大学生创新训练项目</p>
                             </div>
-                        </div>
-                        <p>
-                            围绕病虫害识别、定位与多模态协同诊断开展系统优化，参与算法改进、系统设计和成果沉淀，形成科研与应用结合的完整路径。
-                        </p>
-                        <div class="tag-row">
-                            <span class="tag">CLIP</span>
-                            <span class="tag">Faster R-CNN</span>
-                            <span class="tag">多智能体</span>
-                        </div>
-                        <div class="project-actions">
-                            <a class="button button-secondary" href="projects/lychee-multi-agent.html" target="_blank"
-                                rel="noreferrer">了解更多</a>
-                        </div>
-                    </article>
+                            <h3>面向荔枝病虫害诊断与防治的多智能体协同系统</h3>
+                            <p>
+                                围绕病虫害识别、定位与多模态协同诊断开展系统设计与算法迭代，
+                                也让我逐步把工程经验和科研输出连接在一起。
+                            </p>
+                            <div class="tag-row">
+                                <span class="tag">CLIP</span>
+                                <span class="tag">Faster R-CNN</span>
+                                <span class="tag">多智能体</span>
+                            </div>
+                            <a class="text-link" href="projects/lychee-multi-agent.html" target="_blank"
+                                rel="noreferrer">进入项目页</a>
+                        </article>
+                    </div>
                 </div>
             </section>
 
-            <section id="awards" class="section">
+            <section class="proof-section section">
                 <div class="section-heading" data-reveal>
-                    <p class="eyebrow">Awards</p>
-                    <h2>重点奖项</h2>
+                    <p class="eyebrow">Why Me</p>
+                    <h2>我希望别人记住的，不只是奖项，而是“这个人真的能把系统做起来”</h2>
                 </div>
 
-                <ul class="award-list" data-reveal>
-                    <li>
-                        <strong>国家一等奖</strong>
-                        <span>第八届全国大学生嵌入式芯片与系统设计大赛 FPGA 创新设计赛道</span>
-                    </li>
-                    <li>
-                        <strong>国家二等奖</strong>
-                        <span>第八届全国大学生嵌入式芯片与系统设计大赛 芯片设计赛道</span>
-                    </li>
-                    <li>
-                        <strong>国家三等奖</strong>
-                        <span>2025 年中国大学生机械工程创新创意大赛</span>
-                    </li>
-                    <li>
-                        <strong>国家三等奖</strong>
-                        <span>第十八届全国大学生节能减排社会实践与科技竞赛</span>
-                    </li>
-                    <li>
-                        <strong>赛区二等奖</strong>
-                        <span>第九届全国大学生集成电路创新创业大赛华南赛区</span>
-                    </li>
-                    <li>
-                        <strong>省级二等奖</strong>
-                        <span>“大唐杯”全国大学生新一代信息通信技术大赛</span>
-                    </li>
-                    <li>
-                        <strong>省级二等奖</strong>
-                        <span>第八届“华朗杯”广东省汽车与农机电子环保大赛</span>
-                    </li>
-                    <li>
-                        <strong>省级三等奖</strong>
-                        <span>第九届“华朗杯”广东省汽车与农机电子环保大赛</span>
-                    </li>
-                    <li>
-                        <strong>省级三等奖</strong>
-                        <span>全球校园人工智能算法精英大赛算法创新赛</span>
-                    </li>
-                </ul>
+                <div class="proof-layout">
+                    <article class="proof-panel proof-panel-dark" data-reveal>
+                        <p class="proof-title">几个我很看重的结果</p>
+                        <div class="proof-metrics">
+                            <div>
+                                <strong>国家级奖项</strong>
+                                <span>一等奖、二等奖、三等奖持续产出</span>
+                            </div>
+                            <div>
+                                <strong>论文录用</strong>
+                                <span>《农业机械学报》方向成果已沉淀</span>
+                            </div>
+                            <div>
+                                <strong>项目闭环</strong>
+                                <span>从硬件、控制到展示都做过完整收口</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="proof-panel" data-reveal>
+                        <p class="proof-title">对我来说，真正有说服力的成果是：</p>
+                        <ul class="feature-list">
+                            <li>一套系统不只是方案合理，而是能被调通、被验证、被展示。</li>
+                            <li>一个项目不只是拿到奖，而是还能继续延展到论文、软著和后续研究。</li>
+                            <li>做过的事彼此有关联，慢慢形成我自己的技术路径，而不是零散堆积。</li>
+                        </ul>
+                    </article>
+                </div>
             </section>
 
-            <section id="experience" class="section">
+            <section id="awards" class="section awards-section">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Recognition</p>
+                    <h2>重点成果与奖项</h2>
+                </div>
+
+                <div class="awards-layout">
+                    <article class="awards-highlight editorial-panel" data-reveal>
+                        <p class="awards-kicker">Highlights</p>
+                        <ul class="award-list feature-list">
+                            <li>国家一等奖，全国大学生嵌入式芯片与系统设计大赛 FPGA 创新设计赛道</li>
+                            <li>国家二等奖，全国大学生嵌入式芯片与系统设计大赛 芯片设计赛道</li>
+                            <li>国家三等奖，中国大学生机械工程创新创意大赛</li>
+                            <li>赛区二等奖，全国大学生集成电路创新创业大赛华南赛区</li>
+                        </ul>
+                    </article>
+
+                    <article class="awards-note" data-reveal>
+                        <p>
+                            奖项对我来说不是终点，更像是阶段性反馈。它们让我知道，
+                            自己在走的这条“从底层实现到系统闭环”的路，是有效的，也值得继续往下走。
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="experience" class="section experience-section">
                 <div class="section-heading" data-reveal>
                     <p class="eyebrow">Experience</p>
-                    <h2>实践经历</h2>
+                    <h2>实践经历和持续推进中的研究工作</h2>
                 </div>
 
                 <div class="timeline">
-                    <article class="timeline-item panel" data-reveal>
-                        <div class="timeline-top">
+                    <article class="timeline-item" data-reveal>
+                        <div class="timeline-meta">
                             <span class="timeline-date">2024.12 - 2025.05</span>
-                            <h3>嵌入式系统研发实习生</h3>
-                            <p class="timeline-company">北京冉曦航天科技有限公司</p>
+                            <p class="timeline-role">嵌入式系统研发实习生</p>
+                            <p class="timeline-org">北京冉曦航天科技有限公司</p>
                         </div>
-                        <ul class="detail-list">
-                            <li>独立负责火工点火器控制系统的时序逻辑设计与控制程序开发，完成点火触发、状态监测与应急中断等关键节点定义。</li>
-                            <li>开发 Python 上位机软件，实现参数配置、实时监控与历史数据回放，相关软件已获得计算机软件著作权。</li>
-                            <li>设计基于九轴传感器与舵机的火筒姿态控制算法，参与多轮点火试验与产品研发验证。</li>
-                        </ul>
+                        <div class="timeline-content">
+                            <p>独立负责点火控制系统时序逻辑设计与控制程序开发，完成关键状态定义与应急中断逻辑。</p>
+                            <p>开发 Python 上位机软件，实现参数配置、实时监控与历史数据回放，相关软件已获软著。</p>
+                            <p>参与姿态控制算法设计、多轮点火试验与产品验证，积累了比较完整的联调经验。</p>
+                        </div>
                     </article>
 
-                    <article class="timeline-item panel" data-reveal>
-                        <div class="timeline-top">
+                    <article class="timeline-item" data-reveal>
+                        <div class="timeline-meta">
                             <span class="timeline-date">2025.05 - 至今</span>
-                            <h3>科研与竞赛项目持续推进</h3>
-                            <p class="timeline-company">校内项目与竞赛团队</p>
+                            <p class="timeline-role">科研与竞赛项目持续推进</p>
+                            <p class="timeline-org">校内项目与竞赛团队</p>
                         </div>
-                        <ul class="detail-list">
-                            <li>围绕 FPGA 图像处理、边缘智能、智慧农业和芯片设计持续开展项目研发与论文撰写。</li>
-                            <li>论文《基于 YOLOv11n-ACE 的轻量化荔枝 FPN 改进病虫害检测方法》已被《农业机械学报》录用。</li>
-                            <li>持续参与系统联调、算法优化、硬件部署与成果整理，形成了较完整的科研与竞赛闭环经验。</li>
-                        </ul>
+                        <div class="timeline-content">
+                            <p>围绕 FPGA 图像处理、边缘智能、智慧农业和芯片设计持续开展项目研发与论文写作。</p>
+                            <p>论文《基于 YOLOv11n-ACE 的轻量化荔枝 FPN 改进病虫害检测方法》已被《农业机械学报》录用。</p>
+                            <p>持续参与系统联调、算法优化、硬件部署与成果整理，逐步形成较完整的科研与竞赛闭环经验。</p>
+                        </div>
                     </article>
 
-                    <article class="timeline-item panel" data-reveal>
-                        <div class="timeline-top">
+                    <article class="timeline-item" data-reveal>
+                        <div class="timeline-meta">
                             <span class="timeline-date">进行中</span>
-                            <h3>芯片设计“一生一芯（ysyx）”计划</h3>
-                            <p class="timeline-company">处理器设计与底层系统能力专项实践</p>
+                            <p class="timeline-role">“一生一芯（ysyx）”计划</p>
+                            <p class="timeline-org">处理器设计与底层系统能力专项实践</p>
                         </div>
-                        <ul class="detail-list">
-                            <li>项目进度：已完成 F 阶段，正学习 E 阶段。</li>
-                            <li>硬件建模与微结构（Logisim / Verilog）：在 F 阶段利用 Logisim 从零构建了支持 RV32I 指令集的迷你处理器，直观理解电信号驱动的指令周期与数据通路。</li>
-                            <li>仿真验证与差异化测试（Difftest）：利用 Verilator 搭建 C++ 仿真环境，引入 Difftest 框架将自研硬件与 NEMU 模拟器进行位级比对，实现高效、精确的自动化 Bug 定位。</li>
-                            <li>底层调试与系统构建：深入掌握 GDB、Objdump 等底层调试工具；正探索交叉编译工具链与运行库的适配，构建面向自研处理器的 Bare-metal 软件运行环境。</li>
-                        </ul>
+                        <div class="timeline-content">
+                            <p>已完成 F 阶段，正在学习 E 阶段，持续推进从 RV32I 处理器建模到仿真验证的系统理解。</p>
+                            <p>基于 Logisim / Verilog 从零构建支持 RV32I 指令集的处理器，理解指令周期与数据通路。</p>
+                            <p>利用 Verilator 与 Difftest 进行差分验证，并深入使用 GDB、Objdump 等底层调试工具。</p>
+                        </div>
                     </article>
                 </div>
             </section>

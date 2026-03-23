@@ -4,57 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="基于 LoRa 通信的智能柚园巡检机器人项目详情。">
-    <title>基于 LoRa 通信的智能柚园巡检机器人 | 胡琳</title>
+    <meta name="description" content="基于 LoRa 通信的智能果园巡检机器人项目详情。">
+    <title>基于 LoRa 通信的智能果园巡检机器人 | 胡琳</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body class="detail-page">
     <main class="detail-shell">
-        <a class="back-link" href="../index.html#projects">返回主页</a>
+        <a class="back-link" href="../index.html#projects">返回首页</a>
 
-        <section class="detail-hero panel">
-            <p class="eyebrow">Project Detail</p>
-            <h1>基于 LoRa 通信的智能柚园巡检机器人</h1>
-            <p class="detail-meta">大学生创新训练项目，优秀等级提前结项</p>
-            <p class="detail-summary">
-                该项目面向果园巡检场景，结合 STM32 控制、LoRa 远距离通信和病虫害识别能力，探索农业智能装备从底层控制到智能分析的完整实现路径。
-            </p>
-            <div class="detail-actions">
-                <a class="button button-secondary" href="../LoRa.pptx" target="_blank" rel="noreferrer">查看项目汇报</a>
+        <section class="detail-hero editorial-panel detail-hero-grid">
+            <div>
+                <p class="eyebrow">Embedded / Robotics</p>
+                <h1>基于 LoRa 通信的智能果园巡检机器人</h1>
+                <p class="detail-meta">大学生创新训练项目，优秀等级提前结项</p>
+                <p class="detail-summary">
+                    项目面向果园巡检场景，融合 STM32 控制、LoRa 远距离通信与病虫害识别能力，
+                    探索农业智能装备从底层控制到识别展示的完整实现路径。
+                </p>
+                <div class="detail-actions">
+                    <a class="button button-secondary" href="../LoRa.pptx" target="_blank" rel="noreferrer">查看项目汇报</a>
+                </div>
+            </div>
+            <div class="detail-stat-row">
+                <div class="detail-stat-card">
+                    <span>控制核心</span>
+                    <strong>STM32</strong>
+                </div>
+                <div class="detail-stat-card">
+                    <span>通信方式</span>
+                    <strong>LoRa</strong>
+                </div>
+                <div class="detail-stat-card">
+                    <span>识别能力</span>
+                    <strong>YOLOv8</strong>
+                </div>
             </div>
         </section>
 
-        <section class="detail-section panel">
-            <h2>项目内容</h2>
-            <ul class="detail-list">
-                <li>面向果园巡检任务设计机器人系统，覆盖移动控制、无线通信、识别算法与网页展示。</li>
-                <li>通过 LoRa 实现远距离、抗干扰的数据传输，保证巡检过程中的稳定通信。</li>
-                <li>项目后期引入 YOLOv8 病虫害识别模型，提升巡检过程中的智能化能力。</li>
-            </ul>
+        <section class="detail-section editorial-panel">
+            <div class="detail-section-grid">
+                <div>
+                    <p class="detail-label">Overview</p>
+                    <h2>面向真实果园场景的智能巡检尝试</h2>
+                </div>
+                <div class="detail-copy">
+                    <p>
+                        这个项目不是单独做机器人底盘，也不是单独做识别模型，而是尝试把移动控制、远距离无线通信、
+                        病虫害识别和网页展示打成一套完整系统。
+                    </p>
+                    <p>
+                        它让我在控制、通信、算法接入和项目推进之间建立了更清晰的协同意识，也锻炼了我把原型推向完整展示闭环的能力。
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="detail-section panel">
-            <h2>我负责的工作</h2>
-            <ul class="detail-list">
-                <li>作为团队负责人之一，推进项目整体进度、任务拆分与阶段性交付。</li>
-                <li>完成基于 STM32 的小车运动控制系统开发与联调，支持基础运动与作业逻辑实现。</li>
-                <li>独立负责 LoRa 通信模块的集成与调试，解决远距离传输中的稳定性问题。</li>
-                <li>参与 YOLOv8 病虫害识别接入与交互式网页设计，推动项目形成完整展示闭环。</li>
-            </ul>
+        <section class="detail-section editorial-panel">
+            <p class="detail-label">My Role</p>
+            <h2>我负责的主要工作</h2>
+            <div class="detail-card-grid">
+                <article class="detail-card">
+                    <h3>项目推进</h3>
+                    <p>作为团队负责人之一，推动整体进度、任务拆分和阶段性交付，让项目持续向前落地。</p>
+                </article>
+                <article class="detail-card">
+                    <h3>运动控制系统</h3>
+                    <p>完成基于 STM32 的小车运动控制系统开发与联调，支撑基础移动与作业逻辑实现。</p>
+                </article>
+                <article class="detail-card">
+                    <h3>LoRa 通信集成</h3>
+                    <p>独立负责 LoRa 模块的接入与调试，解决远距离数据传输中的稳定性问题。</p>
+                </article>
+                <article class="detail-card">
+                    <h3>识别与展示闭环</h3>
+                    <p>参与 YOLOv8 病虫害识别接入和交互网页设计，推动项目形成完整的展示链路。</p>
+                </article>
+            </div>
         </section>
 
-        <section class="detail-section panel">
+        <section class="detail-section editorial-panel">
+            <p class="detail-label">Project Gallery</p>
+            <h2>项目展示</h2>
+            <div class="detail-image-grid">
+                <figure class="detail-figure">
+                    <img src="../lora1.png" alt="智能果园巡检机器人图片一">
+                </figure>
+                <figure class="detail-figure">
+                    <img src="../lora2.png" alt="智能果园巡检机器人图片二">
+                </figure>
+            </div>
+        </section>
+
+        <section class="detail-section editorial-panel">
+            <p class="detail-label">Highlights</p>
             <h2>项目亮点</h2>
             <ul class="detail-list">
-                <li>项目兼具机械、控制、通信与算法特征，能够体现跨方向协同开发能力。</li>
-                <li>从控制系统到识别展示均有实际落地，工程链路较完整。</li>
-                <li>最终以前期结项和优秀等级完成，相关成果沉淀为软著与专利材料。</li>
+                <li>兼具机械、控制、通信与算法要素，能够体现跨方向协同开发能力。</li>
+                <li>从控制链路到识别展示均有实际落地，工程闭环较完整。</li>
+                <li>最终实现提前结项并获优秀等级，也沉淀为后续软著与专利材料基础。</li>
             </ul>
         </section>
     </main>
