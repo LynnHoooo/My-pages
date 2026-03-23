@@ -486,7 +486,7 @@ img {
 .about-layout,
 .awards-layout {
     display: grid;
-    gap: 22px;
+    gap: 34px;
     grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.7fr);
 }
 
@@ -547,9 +547,11 @@ img {
 }
 
 .editorial-panel {
-    background: rgba(252, 249, 243, 0.46);
-    border-radius: 34px 34px 12px 12px;
-    padding: 32px 34px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 8px 36px 8px 0;
 }
 
 .editorial-panel p + p {
@@ -566,16 +568,80 @@ img {
 
 .about-side {
     display: grid;
-    gap: 24px;
+    align-content: start;
+    gap: 18px;
+}
+
+.about-story {
+    border-right: 1px solid var(--line-strong);
+}
+
+.about-cloud-panel {
+    background:
+        radial-gradient(circle at 20% 18%, rgba(138, 75, 42, 0.12), transparent 32%),
+        radial-gradient(circle at 78% 64%, rgba(106, 115, 85, 0.14), transparent 28%);
+    min-height: 320px;
+    padding: 10px 0 10px 12px;
+    position: relative;
+}
+
+.about-cloud-label {
+    color: var(--accent);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.about-cloud {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    line-height: 1;
+    max-width: 360px;
+}
+
+.cloud-word {
+    color: rgba(30, 26, 23, 0.88);
+    display: inline-flex;
+    font-family: "Manrope", "Noto Sans SC", sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    padding: 2px 0;
+}
+
+.cloud-word-xl {
+    color: var(--accent-deep);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.cloud-word-lg {
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.cloud-word-md {
+    color: var(--accent);
+    font-size: 1.05rem;
+}
+
+.cloud-word-sm {
+    color: var(--muted);
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+}
+
+.about-cloud-note {
+    border-left: 1px solid var(--line-strong);
+    color: var(--muted);
+    max-width: 330px;
+    padding-left: 16px;
 }
 
 .quote-panel {
-    background: transparent;
-    border: 0;
-    border-left: 2px solid rgba(65, 38, 26, 0.7);
-    box-shadow: none;
-    color: var(--accent-deep);
-    padding: 10px 0 10px 22px;
+    display: none;
 }
 
 .quote-panel p {
@@ -584,9 +650,7 @@ img {
 }
 
 .fact-grid {
-    display: grid;
-    gap: 0;
-    grid-template-columns: 1fr;
+    display: none;
 }
 
 .fact-card {
@@ -648,10 +712,14 @@ img {
 }
 
 .project-feature {
-    border-radius: 34px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-top: 1px solid var(--line-strong);
+    box-shadow: none;
     display: grid;
     gap: 18px;
-    padding: 28px;
+    padding: 26px 0 0;
 }
 
 .project-meta-line {
@@ -785,8 +853,12 @@ img {
 }
 
 .awards-highlight {
-    background:
-        linear-gradient(135deg, rgba(248, 243, 234, 0.78), rgba(233, 223, 210, 0.84));
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line-strong);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 24px 0 0;
 }
 
 .awards-kicker {
@@ -1190,6 +1262,11 @@ img {
         padding-top: 0;
     }
 
+    .about-story {
+        border-right: 0;
+        padding-right: 0;
+    }
+
     .portrait-wrap-compact {
         margin-left: 0;
         width: min(100%, 220px);
@@ -1276,6 +1353,10 @@ img {
     .detail-section {
         border-radius: 24px;
         padding: 22px;
+    }
+
+    .about-cloud {
+        max-width: 100%;
     }
 
     .project-card,
