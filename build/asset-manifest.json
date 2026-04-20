@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/My-pages/static/css/main.b74fc65a.css",
+    "main.js": "/My-pages/static/js/main.28ab0ff1.js",
+    "static/js/787.1ed0c42c.chunk.js": "/My-pages/static/js/787.1ed0c42c.chunk.js",
+    "static/media/1.png": "/My-pages/static/media/1.da4cdc15929448b82da4.png",
+    "static/media/lucyling_cv.pdf": "/My-pages/static/media/lucyling_cv.1c698206c946853d0396.pdf",
+    "static/media/10.png": "/My-pages/static/media/10.909c6560f0992db08fb3.png",
+    "static/media/11.png": "/My-pages/static/media/11.36bf981a9e9935e9f07f.png",
+    "static/media/5.png": "/My-pages/static/media/5.fb439c8a435bc49a921b.png",
+    "static/media/cat.png": "/My-pages/static/media/cat.f799a55a2ce88c54d7a2.png",
+    "static/media/3.png": "/My-pages/static/media/3.ce5a472cf34cd25140a7.png",
+    "static/media/myStyle.png": "/My-pages/static/media/myStyle.f7b8319ec8f1c85b9d7c.png",
+    "static/media/8.png": "/My-pages/static/media/8.709cc970c7e1f8b7ec49.png",
+    "static/media/2.png": "/My-pages/static/media/2.65c2af3246f50f31297a.png",
+    "static/media/6.png": "/My-pages/static/media/6.0ef682dc3d53434e2061.png",
+    "static/media/7.png": "/My-pages/static/media/7.c2334fd03521fe9818dd.png",
+    "static/media/9.png": "/My-pages/static/media/9.14fce4e8b8d831fb1649.png",
+    "static/media/intro.png": "/My-pages/static/media/intro.6a0ad2cfa19ee1576c12.png",
+    "static/media/12.png": "/My-pages/static/media/12.986a467218b84cf3f10e.png",
+    "static/media/4.png": "/My-pages/static/media/4.8795bf64784553621f8b.png",
+    "static/media/leisure.png": "/My-pages/static/media/leisure.f77608df31cbaf9ab7bd.png",
+    "static/media/myPic.jpeg": "/My-pages/static/media/myPic.e2b550eb2478a5b26a7f.jpeg",
+    "static/media/ar.jpg": "/My-pages/static/media/ar.acd6368dc14fb6de77ef.jpg",
+    "static/media/old.png": "/My-pages/static/media/old.07dea3692f61e3a7d00b.png",
+    "static/media/girld.png": "/My-pages/static/media/girld.60fce4d51c4aad76eb0d.png",
+    "static/media/pre.svg": "/My-pages/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/My-pages/index.html",
+    "main.b74fc65a.css.map": "/My-pages/static/css/main.b74fc65a.css.map",
+    "main.28ab0ff1.js.map": "/My-pages/static/js/main.28ab0ff1.js.map",
+    "787.1ed0c42c.chunk.js.map": "/My-pages/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b74fc65a.css",
+    "static/js/main.28ab0ff1.js"
+  ]
+}
